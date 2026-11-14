@@ -1,0 +1,203 @@
+{
+  "coherence": {
+    "A": {
+      "labelled": "10/10",
+      "counts": {
+        "0": 3,
+        "1": 7,
+        "2": 0
+      },
+      "mean_over_2": 0.7,
+      "rows_without_reason": 0
+    },
+    "B": {
+      "labelled": "10/10",
+      "counts": {
+        "0": 0,
+        "1": 2,
+        "2": 8
+      },
+      "mean_over_2": 1.8,
+      "rows_without_reason": 0
+    },
+    "C": {
+      "labelled": "10/10",
+      "counts": {
+        "0": 0,
+        "1": 2,
+        "2": 8
+      },
+      "mean_over_2": 1.8,
+      "rows_without_reason": 0
+    }
+  },
+  "grounding": {
+    "A": {
+      "labelled": "6/6",
+      "counts": {
+        "0": 1,
+        "1": 2,
+        "2": 3
+      },
+      "mean_over_2": 1.333,
+      "rows_without_reason": 0
+    },
+    "B": {
+      "labelled": "6/6",
+      "counts": {
+        "0": 3,
+        "1": 0,
+        "2": 3
+      },
+      "mean_over_2": 1.0,
+      "rows_without_reason": 0
+    },
+    "C": {
+      "labelled": "6/6",
+      "counts": {
+        "0": 1,
+        "1": 0,
+        "2": 5
+      },
+      "mean_over_2": 1.667,
+      "rows_without_reason": 0
+    }
+  },
+  "metadata": {
+    "A": {
+      "metadata_correct": "11/18",
+      "labelled": "18/18",
+      "errors": [
+        {
+          "id": "q19",
+          "rank": "2",
+          "chunk_id": "openstax-intro-python:p121:fixed:3",
+          "note": "section gán theo trang (4.7 Conditional expressions; 4.8 Chapter summary); chunk [1358,1814) nằm sau tiêu đề '4.8 Chapter summary' (vị trí 121) nên chỉ thuộc 4.8 Chapter summary. source/page/chapter đúng."
+        },
+        {
+          "id": "q20",
+          "rank": "2",
+          "chunk_id": "openstax-intro-python:p143:fixed:3",
+          "note": "section gán theo trang (5.5 Loop else; 5.6 Chapter summary); chunk [1349,1717) nằm sau tiêu đề '5.6 Chapter summary' (vị trí 431) nên chỉ thuộc 5.6 Chapter summary. source/page/chapter đúng."
+        },
+        {
+          "id": "q21",
+          "rank": "1",
+          "chunk_id": "openstax-intro-python:p140:fixed:2",
+          "note": "section gán theo trang (5.4 Break and continue; 5.5 Loop else); chunk [897,1007) nằm sau tiêu đề '5.5 Loop else' (vị trí 880) nên chỉ thuộc 5.5 Loop else. source/page/chapter đúng."
+        },
+        {
+          "id": "q22",
+          "rank": "3",
+          "chunk_id": "openstax-intro-python:p95:fixed:2",
+          "note": "section gán theo trang (Introduction; 4.1 Boolean values); chunk [893,1200) nằm sau tiêu đề '4.1 Boolean values' (vị trí 835) nên chỉ thuộc 4.1 Boolean values. source/page/chapter đúng."
+        },
+        {
+          "id": "q23",
+          "rank": "2",
+          "chunk_id": "openstax-intro-python:p164:fixed:2",
+          "note": "section gán theo trang (6.4 Parameters; 6.5 Return values); chunk [894,1134) nằm sau tiêu đề '6.5 Return values' (vị trí 810) nên chỉ thuộc 6.5 Return values. source/page/chapter đúng."
+        },
+        {
+          "id": "q24",
+          "rank": "1",
+          "chunk_id": "openstax-intro-python:p160:fixed:1",
+          "note": "section gán theo trang (6.3 Variable scope; 6.4 Parameters); chunk [447,946) nằm sau tiêu đề '6.4 Parameters' (vị trí 212) nên chỉ thuộc 6.4 Parameters. source/page/chapter đúng."
+        },
+        {
+          "id": "q24",
+          "rank": "3",
+          "chunk_id": "openstax-intro-python:p171:fixed:3",
+          "note": "section gán theo trang (6.6 Keyword arguments; 6.7 Chapter summary); chunk [1346,1845) nằm sau tiêu đề '6.7 Chapter summary' (vị trí 698) nên chỉ thuộc 6.7 Chapter summary. source/page/chapter đúng."
+        }
+      ],
+      "filter_compliance": "0/2"
+    },
+    "B": {
+      "metadata_correct": "12/18",
+      "labelled": "18/18",
+      "errors": [
+        {
+          "id": "q19",
+          "rank": "1",
+          "chunk_id": "openstax-intro-python:p119:paragraph:1",
+          "note": "section gán theo trang (4.6 Nested decisions; 4.7 Conditional expressions); chunk [617,1430) nằm sau tiêu đề '4.7 Conditional expressions' (vị trí 379) nên chỉ thuộc 4.7 Conditional expressions. source/page/chapter đúng."
+        },
+        {
+          "id": "q20",
+          "rank": "1",
+          "chunk_id": "openstax-intro-python:p143:paragraph:1",
+          "note": "section gán theo trang (5.5 Loop else; 5.6 Chapter summary); chunk [1001,1717) nằm sau tiêu đề '5.6 Chapter summary' (vị trí 431) nên chỉ thuộc 5.6 Chapter summary. source/page/chapter đúng."
+        },
+        {
+          "id": "q21",
+          "rank": "3",
+          "chunk_id": "openstax-intro-python:p111:paragraph:2",
+          "note": "section gán theo trang (4.4 Operator precedence; 4.5 Chained decisions); chunk [1384,1498) nằm sau tiêu đề '4.5 Chained decisions' (vị trí 151) nên chỉ thuộc 4.5 Chained decisions. source/page/chapter đúng."
+        },
+        {
+          "id": "q23",
+          "rank": "2",
+          "chunk_id": "openstax-intro-python:p164:paragraph:1",
+          "note": "section gán theo trang (6.4 Parameters; 6.5 Return values); chunk [993,1134) nằm sau tiêu đề '6.5 Return values' (vị trí 810) nên chỉ thuộc 6.5 Return values. source/page/chapter đúng."
+        },
+        {
+          "id": "q24",
+          "rank": "2",
+          "chunk_id": "openstax-intro-python:p171:paragraph:2",
+          "note": "section gán theo trang (6.6 Keyword arguments; 6.7 Chapter summary); chunk [1852,1966) nằm sau tiêu đề '6.7 Chapter summary' (vị trí 698) nên chỉ thuộc 6.7 Chapter summary. source/page/chapter đúng."
+        },
+        {
+          "id": "q24",
+          "rank": "3",
+          "chunk_id": "openstax-intro-python:p147:paragraph:1",
+          "note": "section gán theo trang (Introduction; 6.1 Defining functions); chunk [971,1066) nằm sau tiêu đề '6.1 Defining functions' (vị trí 839) nên chỉ thuộc 6.1 Defining functions. source/page/chapter đúng."
+        }
+      ],
+      "filter_compliance": "0/2"
+    },
+    "C": {
+      "metadata_correct": "12/18",
+      "labelled": "18/18",
+      "errors": [
+        {
+          "id": "q19",
+          "rank": "1",
+          "chunk_id": "openstax-intro-python:p119:paragraph:1",
+          "note": "section gán theo trang (4.6 Nested decisions; 4.7 Conditional expressions); chunk [617,1430) nằm sau tiêu đề '4.7 Conditional expressions' (vị trí 379) nên chỉ thuộc 4.7 Conditional expressions. source/page/chapter đúng."
+        },
+        {
+          "id": "q20",
+          "rank": "1",
+          "chunk_id": "openstax-intro-python:p143:paragraph:1",
+          "note": "section gán theo trang (5.5 Loop else; 5.6 Chapter summary); chunk [1001,1717) nằm sau tiêu đề '5.6 Chapter summary' (vị trí 431) nên chỉ thuộc 5.6 Chapter summary. source/page/chapter đúng."
+        },
+        {
+          "id": "q21",
+          "rank": "3",
+          "chunk_id": "openstax-intro-python:p143:paragraph:1",
+          "note": "section gán theo trang (5.5 Loop else; 5.6 Chapter summary); chunk [1001,1717) nằm sau tiêu đề '5.6 Chapter summary' (vị trí 431) nên chỉ thuộc 5.6 Chapter summary. source/page/chapter đúng."
+        },
+        {
+          "id": "q23",
+          "rank": "2",
+          "chunk_id": "openstax-intro-python:p164:paragraph:1",
+          "note": "section gán theo trang (6.4 Parameters; 6.5 Return values); chunk [993,1134) nằm sau tiêu đề '6.5 Return values' (vị trí 810) nên chỉ thuộc 6.5 Return values. source/page/chapter đúng."
+        },
+        {
+          "id": "q24",
+          "rank": "2",
+          "chunk_id": "openstax-intro-python:p171:paragraph:2",
+          "note": "section gán theo trang (6.6 Keyword arguments; 6.7 Chapter summary); chunk [1852,1966) nằm sau tiêu đề '6.7 Chapter summary' (vị trí 698) nên chỉ thuộc 6.7 Chapter summary. source/page/chapter đúng."
+        },
+        {
+          "id": "q24",
+          "rank": "3",
+          "chunk_id": "openstax-intro-python:p147:paragraph:1",
+          "note": "section gán theo trang (Introduction; 6.1 Defining functions); chunk [971,1066) nằm sau tiêu đề '6.1 Defining functions' (vị trí 839) nên chỉ thuộc 6.1 Defining functions. source/page/chapter đúng."
+        }
+      ],
+      "filter_compliance": "2/2"
+    }
+  }
+}

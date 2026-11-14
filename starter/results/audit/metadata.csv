@@ -1,21 +1,21 @@
 id,strategy,rank,chunk_id,source,page,chapter,section,text_preview,question_filter,filter_applied,filter_ok_auto,metadata_correct_1_0,error_note
 q19,A,1,openstax-intro-python:p109:fixed:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,109,4,4.4 Operator precedence,"are left associative and are evaluated
 from left to right. Exponentiation is the main exception (noted above) and is right associative: that is, evaluated
-from right to left. Ex: 2 ** 3 ** 4 is evalua",,,N/A,,
+from right to left. Ex: 2 ** 3 ** 4 is evalua",,,N/A,1,
 q19,A,2,openstax-intro-python:p121:fixed:3,data/raw/Introduction_to_Python_Programming-WEB.pdf,121,4,4.7 Conditional expressions; 4.8 Chapter summary,"x > y
 (Greater than)
 Compares the values of x and y and returns True if the x is greater than y and False
 otherwise. Ex: 9 > 3 is True.
 x < y
 (Less than)
-Compares the values of x and y and returns Tru",,,N/A,,
+Compares the values of x and y and returns Tru",,,N/A,0,"section gán theo trang (4.7 Conditional expressions; 4.8 Chapter summary); chunk [1358,1814) nằm sau tiêu đề '4.8 Chapter summary' (vị trí 121) nên chỉ thuộc 4.8 Chapter summary. source/page/chapter đúng."
 q19,A,3,openstax-intro-python:p110:fixed:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,110,4,4.4 Operator precedence,"b. 100 < x or x > 150
 c. 100 < x and x > 150
 Enforcing order and clarity with parentheses
 Operator precedence rules can be hard to remember. Parentheses not only assert a different order of
-operations",,,N/A,,
+operations",,,N/A,1,
 q19,B,1,openstax-intro-python:p119:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,119,4,4.6 Nested decisions; 4.7 Conditional expressions,"A conditional expression is evaluated by first checking the condition. If condition is true,
-expression_if_true is evaluated, and the result is the resulting value of the conditional expression. Else,",,,N/A,,
+expression_if_true is evaluated, and the result is the resulting value of the conditional expression. Else,",,,N/A,0,"section gán theo trang (4.6 Nested decisions; 4.7 Conditional expressions); chunk [617,1430) nằm sau tiêu đề '4.7 Conditional expressions' (vị trí 379) nên chỉ thuộc 4.7 Conditional expressions. source/page/chapter đúng."
 q19,B,2,openstax-intro-python:p111:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,111,4,4.4 Operator precedence; 4.5 Chained decisions,"Boolean.
 Avoid: x= y<44
 Better: x = y < 44
@@ -24,14 +24,14 @@ Avoid: x = 5 * z+20
 Better: x = 5*z + 20
 4.5 Chained decisions
 Learning objectives
-By the ",,,N/A,,
+By the ",,,N/A,1,
 q19,B,3,openstax-intro-python:p98:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,98,4,4.1 Boolean values,"Example: Rolling a d20 in a tabletop game; ch 4, video 3 (https://www.openstax.org/r/rolling-d20)
 CONCEPTS IN PRACTICE
 Comparing values
 For each new variable, what is the value of compare_result?
-15 .",,,N/A,,
+15 .",,,N/A,1,
 q19,C,1,openstax-intro-python:p119:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,119,4,4.6 Nested decisions; 4.7 Conditional expressions,"A conditional expression is evaluated by first checking the condition. If condition is true,
-expression_if_true is evaluated, and the result is the resulting value of the conditional expression. Else,",,,N/A,,
+expression_if_true is evaluated, and the result is the resulting value of the conditional expression. Else,",,,N/A,0,"section gán theo trang (4.6 Nested decisions; 4.7 Conditional expressions); chunk [617,1430) nằm sau tiêu đề '4.7 Conditional expressions' (vị trí 379) nên chỉ thuộc 4.7 Conditional expressions. source/page/chapter đúng."
 q19,C,2,openstax-intro-python:p111:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,111,4,4.4 Operator precedence; 4.5 Chained decisions,"Boolean.
 Avoid: x= y<44
 Better: x = y < 44
@@ -40,12 +40,12 @@ Avoid: x = 5 * z+20
 Better: x = 5*z + 20
 4.5 Chained decisions
 Learning objectives
-By the ",,,N/A,,
+By the ",,,N/A,1,
 q19,C,3,openstax-intro-python:p98:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,98,4,4.1 Boolean values,"Example: Rolling a d20 in a tabletop game; ch 4, video 3 (https://www.openstax.org/r/rolling-d20)
 CONCEPTS IN PRACTICE
 Comparing values
 For each new variable, what is the value of compare_result?
-15 .",,,N/A,,
+15 .",,,N/A,1,
 q20,A,1,openstax-intro-python:p130:fixed:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,130,5,5.2 For loop,"values. Examples are provided in the table below.
 Range function Description Example Output
 range(end)
@@ -53,11 +53,11 @@ range(end)
 until end.
 • Step size: 1
 range(4) 0, 1, 2, 3
-range(start, ",,,N/A,,
+range(start, ",,,N/A,1,
 q20,A,2,openstax-intro-python:p143:fixed:3,data/raw/Introduction_to_Python_Programming-WEB.pdf,143,5,5.5 Loop else; 5.6 Chapter summary,"together most topics presented in the chapter.
 Function Description
 range(end) Generates a sequence beginning at 0 until end with step size of 1.
-range(start, end) Generates a sequence beginning at st",,,N/A,,
+range(start, end) Generates a sequence beginning at st",,,N/A,0,"section gán theo trang (5.5 Loop else; 5.6 Chapter summary); chunk [1349,1717) nằm sau tiêu đề '5.6 Chapter summary' (vị trí 431) nên chỉ thuộc 5.6 Chapter summary. source/page/chapter đúng."
 q20,A,3,openstax-intro-python:p131:fixed:2,data/raw/Introduction_to_Python_Programming-WEB.pdf,131,5,5.2 For loop,"6 . What is the sequence generated from range(-1, -2, -1)?
 a. 1
 b. -1, -2
@@ -67,46 +67,46 @@ a. 1
 b. 1, 2
 c. empty sequence
 8 . What is the output of range(5, 2)?
-a. ",,,N/A,,
+a. ",,,N/A,1,
 q20,B,1,openstax-intro-python:p143:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,143,5,5.5 Loop else; 5.6 Chapter summary,"• A continue statement allows for skipping the execution of the remainder of the loop without exiting the
 loop entirely.
-• A loop else statement runs after the loop's execution is completed without be",,,N/A,,
+• A loop else statement runs after the loop's execution is completed without be",,,N/A,0,"section gán theo trang (5.5 Loop else; 5.6 Chapter summary); chunk [1001,1717) nằm sau tiêu đề '5.6 Chapter summary' (vị trí 431) nên chỉ thuộc 5.6 Chapter summary. source/page/chapter đúng."
 q20,B,2,openstax-intro-python:p130:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,130,5,5.2 For loop,"a. A string*
 b. A*s*t*r*i*n*g*
 c. A* *s*t*r*i*n*g*
 Range() function in for loop
 A for loop can be used for iteration and counting. The range() function is a common approach for
-implementing counting i",,,N/A,,
+implementing counting i",,,N/A,1,
 q20,B,3,openstax-intro-python:p131:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,131,5,5.2 For loop,"7 . What is the output of the range(1, 2, -1)?
 a. 1
 b. 1, 2
 c. empty sequence
 8 . What is the output of range(5, 2)?
 a. 0, 2, 4
-b. 2, 3, 4",,,N/A,,
+b. 2, 3, 4",,,N/A,1,
 q20,C,1,openstax-intro-python:p143:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,143,5,5.5 Loop else; 5.6 Chapter summary,"• A continue statement allows for skipping the execution of the remainder of the loop without exiting the
 loop entirely.
-• A loop else statement runs after the loop's execution is completed without be",,,N/A,,
+• A loop else statement runs after the loop's execution is completed without be",,,N/A,0,"section gán theo trang (5.5 Loop else; 5.6 Chapter summary); chunk [1001,1717) nằm sau tiêu đề '5.6 Chapter summary' (vị trí 431) nên chỉ thuộc 5.6 Chapter summary. source/page/chapter đúng."
 q20,C,2,openstax-intro-python:p130:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,130,5,5.2 For loop,"a. A string*
 b. A*s*t*r*i*n*g*
 c. A* *s*t*r*i*n*g*
 Range() function in for loop
 A for loop can be used for iteration and counting. The range() function is a common approach for
-implementing counting i",,,N/A,,
+implementing counting i",,,N/A,1,
 q20,C,3,openstax-intro-python:p131:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,131,5,5.2 For loop,"7 . What is the output of the range(1, 2, -1)?
 a. 1
 b. 1, 2
 c. empty sequence
 8 . What is the output of range(5, 2)?
 a. 0, 2, 4
-b. 2, 3, 4",,,N/A,,
+b. 2, 3, 4",,,N/A,1,
 q21,A,1,openstax-intro-python:p140:fixed:2,data/raw/Introduction_to_Python_Programming-WEB.pdf,140,5,5.4 Break and continue; 5.5 Loop else,"else statement runs after the loop's execution is completed without being interrupted by a break
 TRY IT
-TRY IT","{""chapter"": 5}",,True,,
+TRY IT","{""chapter"": 5}",,True,0,"section gán theo trang (5.4 Break and continue; 5.5 Loop else); chunk [897,1007) nằm sau tiêu đề '5.5 Loop else' (vị trí 880) nên chỉ thuộc 5.5 Loop else. source/page/chapter đúng."
 q21,A,2,openstax-intro-python:p102:fixed:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,102,4,4.2 If-else statements,"mile away, we'll walk. Else, we'll
 drive.
 An else statement is used with an if statement and contains a body of statements that is executed when the
-if statement's condition is false. When an if-else ","{""chapter"": 5}",,False,,
+if statement's condition is false. When an if-else ","{""chapter"": 5}",,False,1,
 q21,A,3,openstax-intro-python:p102:fixed:2,data/raw/Introduction_to_Python_Programming-WEB.pdf,102,4,4.2 If-else statements,"statement template:
 1 # Statements before
 2
@@ -118,7 +118,7 @@ q21,A,3,openstax-intro-python:p102:fixed:2,data/raw/Introduction_to_Python_Progr
 8 # Statements after
 CHECKPOINT
 Example: Trivia question
-Example: Trivia question; ch 4, video 5 (https://www.op","{""chapter"": 5}",,False,,
+Example: Trivia question; ch 4, video 5 (https://www.op","{""chapter"": 5}",,False,1,
 q21,B,1,openstax-intro-python:p123:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,123,4,4.8 Chapter summary,"Function Description
 elif statement
 # Statements before
@@ -133,20 +133,20 @@ Nested if
 statement
 # Statements before
 if condition:
-  if con","{""chapter"": 5}",,False,,
+  if con","{""chapter"": 5}",,False,1,
 q21,B,2,openstax-intro-python:p102:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,102,4,4.2 If-else statements,"CHECKPOINT
 Example: Trivia question
 Example: Trivia question; ch 4, video 5 (https://www.openstax.org/r/trivia-question)
 CONCEPTS IN PRACTICE
 Exploring if-else statements
-6 . Given the following code,","{""chapter"": 5}",,False,,
+6 . Given the following code,","{""chapter"": 5}",,False,1,
 q21,B,3,openstax-intro-python:p111:paragraph:2,data/raw/Introduction_to_Python_Programming-WEB.pdf,111,4,4.4 Operator precedence; 4.5 Chained decisions,"if-elif statement template:
 # Statements before
 if condition:
   # Body
 elif condition:
   # Body
-# Statements after","{""chapter"": 5}",,False,,
+# Statements after","{""chapter"": 5}",,False,0,"section gán theo trang (4.4 Operator precedence; 4.5 Chained decisions); chunk [1384,1498) nằm sau tiêu đề '4.5 Chained decisions' (vị trí 151) nên chỉ thuộc 4.5 Chained decisions. source/page/chapter đúng."
 q21,C,1,openstax-intro-python:p140:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,140,5,5.4 Break and continue; 5.5 Loop else,"continue
   print(c)
 a. h
@@ -162,13 +162,13 @@ i
 c. hi
 Ali
 Using break control statement in a loop
-Write a program that reads a string value and prints ""Found"" if the string contains a space character. E","{""chapter"": 5}","{""chapter"": 5}",True,,
+Write a program that reads a string value and prints ""Found"" if the string contains a space character. E","{""chapter"": 5}","{""chapter"": 5}",True,1,
 q21,C,2,openstax-intro-python:p141:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,141,5,5.5 Loop else,"statement. A loop else is used to identify if the loop is terminated normally or the execution is interrupted by
 a break statement.
-Ex: A for loop that iterates over a list of numbers to find if the v","{""chapter"": 5}","{""chapter"": 5}",True,,
+Ex: A for loop that iterates over a list of numbers to find if the v","{""chapter"": 5}","{""chapter"": 5}",True,1,
 q21,C,3,openstax-intro-python:p143:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,143,5,5.5 Loop else; 5.6 Chapter summary,"• A continue statement allows for skipping the execution of the remainder of the loop without exiting the
 loop entirely.
-• A loop else statement runs after the loop's execution is completed without be","{""chapter"": 5}","{""chapter"": 5}",True,,
+• A loop else statement runs after the loop's execution is completed without be","{""chapter"": 5}","{""chapter"": 5}",True,0,"section gán theo trang (5.5 Loop else; 5.6 Chapter summary); chunk [1001,1717) nằm sau tiêu đề '5.6 Chapter summary' (vị trí 431) nên chỉ thuộc 5.6 Chapter summary. source/page/chapter đúng."
 q22,A,1,openstax-intro-python:p96:fixed:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,96,4,4.1 Boolean values,"sign
 Example: Crosswalk sign; ch 4, video 1 (https://www.openstax.org/r/crosswalk-sign)
 CONCEPTS IN PRACTICE
@@ -176,32 +176,32 @@ Using Boolean variables
 Consider the following code:
 is_fruit = ""True""
 is_vegetable = 0
-is_","{""chapter"": 5}",,False,,
+is_","{""chapter"": 5}",,False,1,
 q22,A,2,openstax-intro-python:p106:fixed:2,data/raw/Introduction_to_Python_Programming-WEB.pdf,106,4,4.3 Boolean operations,"and can be used to toggle a Boolean's value.
-Ex: is_on = not is_on.","{""chapter"": 5}",,False,,
+Ex: is_on = not is_on.","{""chapter"": 5}",,False,1,
 q22,A,3,openstax-intro-python:p95:fixed:2,data/raw/Introduction_to_Python_Programming-WEB.pdf,95,4,Introduction; 4.1 Boolean values,"section you should be able to
 • Explain a Boolean value.
 • Use bool variables to store Boolean values.
 • Demonstrate converting integers, floats, and strings to Booleans.
-• Demonstrate converting Bool","{""chapter"": 5}",,False,,
+• Demonstrate converting Bool","{""chapter"": 5}",,False,0,"section gán theo trang (Introduction; 4.1 Boolean values); chunk [893,1200) nằm sau tiêu đề '4.1 Boolean values' (vị trí 835) nên chỉ thuộc 4.1 Boolean values. source/page/chapter đúng."
 q22,B,1,openstax-intro-python:p96:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,96,4,4.1 Boolean values,"bool data type
 People often ask binary questions such as yes/no or true/false questions. Ex: Do you like pineapple on pizza?
-Ex: True or false: I like pineapple on pizza. The response is a Boolean val","{""chapter"": 5}",,False,,
+Ex: True or false: I like pineapple on pizza. The response is a Boolean val","{""chapter"": 5}",,False,1,
 q22,B,2,openstax-intro-python:p101:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,101,4,4.2 If-else statements,"CHECKPOINT
 Example: Quantity check
 Example: Quantity check; ch 4, video 4 (https://www.openstax.org/r/quantity-check)
 USING BOOLEAN VARIABLES
-A Boolean variable already has a value of True or False an","{""chapter"": 5}",,False,,
+A Boolean variable already has a value of True or False an","{""chapter"": 5}",,False,1,
 q22,B,3,openstax-intro-python:p95:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,95,4,Introduction; 4.1 Boolean values,"Figure 4.1 credit: modification of work ""Fork In The Road"", by Ian Sane/Flickr, CC BY 2.0
 Chapter Outline
 4.1 Boolean values
 4.2 If-else statements
 4.3 Boolean operations
 4.4 Operator precedence
-4.5 C","{""chapter"": 5}",,False,,
+4.5 C","{""chapter"": 5}",,False,1,
 q22,C,1,openstax-intro-python:p141:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,141,5,5.5 Loop else,"statement. A loop else is used to identify if the loop is terminated normally or the execution is interrupted by
 a break statement.
-Ex: A for loop that iterates over a list of numbers to find if the v","{""chapter"": 5}","{""chapter"": 5}",True,,
+Ex: A for loop that iterates over a list of numbers to find if the v","{""chapter"": 5}","{""chapter"": 5}",True,1,
 q22,C,2,openstax-intro-python:p126:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,126,5,5.1 While loop,"b. 6
 c. 7
 2 . What is the variable g's value when the while loop condition evaluates to False?
@@ -211,59 +211,59 @@ c. 21
 3 . What are the printed values in the output?
 a. 1 1 2 3 5 8 13
 b. 1 2 3 5 8 13
-c. 1 1","{""chapter"": 5}","{""chapter"": 5}",True,,
+c. 1 1","{""chapter"": 5}","{""chapter"": 5}",True,1,
 q22,C,3,openstax-intro-python:p126:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,126,5,5.1 While loop,"loop expression is evaluated again.
 • If true, the loop body will execute at least one more time (also called looping or iterating one more time).
-• If false, the loop's execution will terminate and t","{""chapter"": 5}","{""chapter"": 5}",True,,
+• If false, the loop's execution will terminate and t","{""chapter"": 5}","{""chapter"": 5}",True,1,
 q23,A,1,openstax-intro-python:p165:fixed:2,data/raw/Introduction_to_Python_Programming-WEB.pdf,165,6,6.5 Return values,"c. no difference
 Using multiple return statements
 Functions that have multiple execution paths may use multiple return statements. Ex: A function with an
-if-else statement may have two return statemen",,,N/A,,
+if-else statement may have two return statemen",,,N/A,1,
 q23,A,2,openstax-intro-python:p164:fixed:2,data/raw/Introduction_to_Python_Programming-WEB.pdf,164,6,6.4 Parameters; 6.5 Return values,"to
 • Identify a function's return value.
 • Employ return statements in functions to return values.
 Returning from a function
-When a function finishes, the function returns and provides a result to the",,,N/A,,
+When a function finishes, the function returns and provides a result to the",,,N/A,0,"section gán theo trang (6.4 Parameters; 6.5 Return values); chunk [894,1134) nằm sau tiêu đề '6.5 Return values' (vị trí 810) nên chỉ thuộc 6.5 Return values. source/page/chapter đúng."
 q23,A,3,openstax-intro-python:p165:fixed:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,165,6,6.5 Return values,"finishes the function execution and can specify a value to return to the function's caller. Functions introduced
-so far have not had a return statement, which is the same as returning None, representi",,,N/A,,
+so far have not had a return statement, which is the same as returning None, representi",,,N/A,1,
 q23,B,1,openstax-intro-python:p165:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,165,6,6.5 Return values,"Functions that have multiple execution paths may use multiple return statements. Ex: A function with an
-if-else statement may have two return statements for each branch. Return statements always end t",,,N/A,,
+if-else statement may have two return statements for each branch. Return statements always end t",,,N/A,1,
 q23,B,2,openstax-intro-python:p164:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,164,6,6.4 Parameters; 6.5 Return values,"Returning from a function
 When a function finishes, the function returns and provides a result to the calling code. A return statement
-TRY IT",,,N/A,,
+TRY IT",,,N/A,0,"section gán theo trang (6.4 Parameters; 6.5 Return values); chunk [993,1134) nằm sau tiêu đề '6.5 Return values' (vị trí 810) nên chỉ thuộc 6.5 Return values. source/page/chapter đúng."
 q23,B,3,openstax-intro-python:p165:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,165,6,6.5 Return values,"finishes the function execution and can specify a value to return to the function's caller. Functions introduced
-so far have not had a return statement, which is the same as returning None, representi",,,N/A,,
+so far have not had a return statement, which is the same as returning None, representi",,,N/A,1,
 q23,C,1,openstax-intro-python:p165:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,165,6,6.5 Return values,"Functions that have multiple execution paths may use multiple return statements. Ex: A function with an
-if-else statement may have two return statements for each branch. Return statements always end t",,,N/A,,
+if-else statement may have two return statements for each branch. Return statements always end t",,,N/A,1,
 q23,C,2,openstax-intro-python:p164:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,164,6,6.4 Parameters; 6.5 Return values,"Returning from a function
 When a function finishes, the function returns and provides a result to the calling code. A return statement
-TRY IT",,,N/A,,
+TRY IT",,,N/A,0,"section gán theo trang (6.4 Parameters; 6.5 Return values); chunk [993,1134) nằm sau tiêu đề '6.5 Return values' (vị trí 810) nên chỉ thuộc 6.5 Return values. source/page/chapter đúng."
 q23,C,3,openstax-intro-python:p165:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,165,6,6.5 Return values,"finishes the function execution and can specify a value to return to the function's caller. Functions introduced
-so far have not had a return statement, which is the same as returning None, representi",,,N/A,,
+so far have not had a return statement, which is the same as returning None, representi",,,N/A,1,
 q24,A,1,openstax-intro-python:p160:fixed:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,160,6,6.3 Variable scope; 6.4 Parameters,"if a programmer wants to write a function that prints the contents of a list? Good practice is to pass
-values directly to a function rather than relying on global variables. A function argument is a v",,,N/A,,
+values directly to a function rather than relying on global variables. A function argument is a v",,,N/A,0,"section gán theo trang (6.3 Variable scope; 6.4 Parameters); chunk [447,946) nằm sau tiêu đề '6.4 Parameters' (vị trí 212) nên chỉ thuộc 6.4 Parameters. source/page/chapter đúng."
 q24,A,2,openstax-intro-python:p170:fixed:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,170,6,6.6 Keyword arguments,"(such as
 lists) should not be used as default values.
 The physics example below calculates weight as a force in newtons given mass in kilograms and acceleration
-in . Gravity on Earth is 9.8 , and grav",,,N/A,,
+in . Gravity on Earth is 9.8 , and grav",,,N/A,1,
 q24,A,3,openstax-intro-python:p171:fixed:3,data/raw/Introduction_to_Python_Programming-WEB.pdf,171,6,6.6 Keyword arguments; 6.7 Chapter summary,"with the arguments' values.
 • Function calls can use positional arguments to map values to parameters in order.
-• Function calls can use keyword arguments to map values using parameter names in any or",,,N/A,,
+• Function calls can use keyword arguments to map values using parameter names in any or",,,N/A,0,"section gán theo trang (6.6 Keyword arguments; 6.7 Chapter summary); chunk [1346,1845) nằm sau tiêu đề '6.7 Chapter summary' (vị trí 698) nên chỉ thuộc 6.7 Chapter summary. source/page/chapter đúng."
 q24,B,1,openstax-intro-python:p170:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,170,6,6.6 Keyword arguments,"a. greeting(""Morning"", ""Morgan"", count=3)
 b. greeting(count=1,""Hi"", ""Bea"")
 c. greeting(""Cheers"", ""Colleagues"", 10)
 Default parameter values
-Functions can define default parameter values to use if a po",,,N/A,,
+Functions can define default parameter values to use if a po",,,N/A,1,
 q24,B,2,openstax-intro-python:p171:paragraph:2,data/raw/Introduction_to_Python_Programming-WEB.pdf,171,6,6.6 Keyword arguments; 6.7 Chapter summary,"At this point, you should be able to write functions that have any number of parameters and return a value,
-TRY IT",,,N/A,,
+TRY IT",,,N/A,0,"section gán theo trang (6.6 Keyword arguments; 6.7 Chapter summary); chunk [1852,1966) nằm sau tiêu đề '6.7 Chapter summary' (vị trí 698) nên chỉ thuộc 6.7 Chapter summary. source/page/chapter đúng."
 q24,B,3,openstax-intro-python:p147:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,147,6,Introduction; 6.1 Defining functions,"• Define a parameterless function that outputs strings.
-• Describe benefits of using functions.",,,N/A,,
+• Describe benefits of using functions.",,,N/A,0,"section gán theo trang (Introduction; 6.1 Defining functions); chunk [971,1066) nằm sau tiêu đề '6.1 Defining functions' (vị trí 839) nên chỉ thuộc 6.1 Defining functions. source/page/chapter đúng."
 q24,C,1,openstax-intro-python:p170:paragraph:0,data/raw/Introduction_to_Python_Programming-WEB.pdf,170,6,6.6 Keyword arguments,"a. greeting(""Morning"", ""Morgan"", count=3)
 b. greeting(count=1,""Hi"", ""Bea"")
 c. greeting(""Cheers"", ""Colleagues"", 10)
 Default parameter values
-Functions can define default parameter values to use if a po",,,N/A,,
+Functions can define default parameter values to use if a po",,,N/A,1,
 q24,C,2,openstax-intro-python:p171:paragraph:2,data/raw/Introduction_to_Python_Programming-WEB.pdf,171,6,6.6 Keyword arguments; 6.7 Chapter summary,"At this point, you should be able to write functions that have any number of parameters and return a value,
-TRY IT",,,N/A,,
+TRY IT",,,N/A,0,"section gán theo trang (6.6 Keyword arguments; 6.7 Chapter summary); chunk [1852,1966) nằm sau tiêu đề '6.7 Chapter summary' (vị trí 698) nên chỉ thuộc 6.7 Chapter summary. source/page/chapter đúng."
 q24,C,3,openstax-intro-python:p147:paragraph:1,data/raw/Introduction_to_Python_Programming-WEB.pdf,147,6,Introduction; 6.1 Defining functions,"• Define a parameterless function that outputs strings.
-• Describe benefits of using functions.",,,N/A,,
+• Describe benefits of using functions.",,,N/A,0,"section gán theo trang (Introduction; 6.1 Defining functions); chunk [971,1066) nằm sau tiêu đề '6.1 Defining functions' (vị trí 839) nên chỉ thuộc 6.1 Defining functions. source/page/chapter đúng."
