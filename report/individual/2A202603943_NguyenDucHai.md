@@ -100,6 +100,7 @@ Grounding và metadata được chấm trên 6 câu test. "Filter tuân thủ" n
   - **Gold chưa đủ:** q21 dưới A lấy `p140:fixed:2` có câu tương đương với evidence ("…else statement runs after the loop's execution is completed without being interrupted by a break"), nhưng benchmark chỉ ghi trang 143 và 141. Hit tự động vì vậy tính thiếu cho A, còn grounding thủ công cho 2. Benchmark không được sửa vì đã xem test.
   - **Rò rỉ:** q05 (dev) và q19 (test) cùng ở trang 109; q21 và q22 (test) cùng nằm trong mục 5.5. Câu hỏi do chính người làm bài viết sau khi đọc corpus.
   - **Nhãn:** chỉ có một người chấm, không có người chấm thứ hai để đo độ đồng thuận.
+  - **Mẫu coherence lệch về chương 4:** 10 vị trí (p95–p104) đều thuộc chương 4, chủ yếu là văn xuôi mở đầu chương. Chưa đo trang nhiều code hay bảng của chương 5–6, nên điểm coherence 0,7 / 1,8 chỉ đại diện cho loại trang này.
   - **Đo thời gian:** chạy một lần trên máy local với ít dòng (131–220 dòng mỗi cấu hình), nên không đại diện cho corpus lớn hoặc khi dùng index ANN.
   - **Chi phí:** lấy từ `usage.total_tokens` của API, nhân với giá $0,02 trên 1 triệu token.
 - **Nếu làm lại hoặc mở rộng, cải tiến gì?**
