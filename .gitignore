@@ -8,3 +8,7 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 *.sqlite
+
+# Corpus: licence requires per-page attribution; regenerate via starter/scripts/build_manifest.py
+starter/data/raw/
+starter/data/processed/

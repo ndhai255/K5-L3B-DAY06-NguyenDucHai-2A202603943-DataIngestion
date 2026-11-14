@@ -1,0 +1,493 @@
+{
+  "generated_at": "2026-11-14T09:49:11",
+  "generated_by": "starter/scripts/build_manifest.py",
+  "counting_rule": "A page counts when, after removing running headers/footers and the chapter-opener title decoration and normalizing whitespace, it has >= 300 characters of text. Pages are 1-based PDF page indices (the printed page number is 10 lower). Only the selected chapters are in scope; front matter, other chapters and index are not ingested.",
+  "filter_field": {
+    "name": "chapter",
+    "type": "int",
+    "values_source": "PDF outline (bookmarks) 'Chapter N <title>'; a page belongs to the chapter whose bookmark range contains it"
+  },
+  "sources": [
+    {
+      "source_id": "openstax-intro-python",
+      "title": "Introduction to Python Programming (OpenStax)",
+      "source_path_or_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Introduction_to_Python_Programming-WEB.pdf",
+      "book_page": "https://openstax.org/details/books/introduction-python-programming",
+      "local_path": "starter/data/raw/Introduction_to_Python_Programming-WEB.pdf",
+      "license_or_permission": "CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+      "attribution": "Udayan Das, Aubrey Lawson, Chris Mayfield, Narges Norouzi. Introduction to Python Programming. OpenStax, Rice University. Access for free at openstax.org.",
+      "redistribution_note": "The licence requires 'Access for free at openstax.org.' on every redistributed page view. The pipeline strips that footer from chunk text, so the raw PDF and starter/data/processed/ are git-ignored; reproduce them with the commands below. Short excerpts in benchmark/results keep this attribution in their README.",
+      "reproduce": [
+        "curl -L -o starter/data/raw/Introduction_to_Python_Programming-WEB.pdf https://assets.openstax.org/oscms-prodcms/media/documents/Introduction_to_Python_Programming-WEB.pdf",
+        "cd starter && python scripts/build_manifest.py"
+      ],
+      "accessed_at": "2026-11-13",
+      "version": "PDF /ModDate D:20260420121346-05'00'",
+      "sha256": "e1298e4fcfe541a8fc3bb786c5756d3d2be8e6ffc07997f1bc1e0ac270be383d",
+      "physical_pages_in_pdf": 397,
+      "chapters": [
+        {
+          "chapter": 4,
+          "title": "Decisions",
+          "pdf_pages": [
+            95,
+            124
+          ],
+          "sections": [
+            "Introduction",
+            "4.1 Boolean values",
+            "4.2 If-else statements",
+            "4.3 Boolean operations",
+            "4.4 Operator precedence",
+            "4.5 Chained decisions",
+            "4.6 Nested decisions",
+            "4.7 Conditional expressions",
+            "4.8 Chapter summary"
+          ]
+        },
+        {
+          "chapter": 5,
+          "title": "Loops",
+          "pdf_pages": [
+            125,
+            146
+          ],
+          "sections": [
+            "Introduction",
+            "5.1 While loop",
+            "5.2 For loop",
+            "5.3 Nested loops",
+            "5.4 Break and continue",
+            "5.5 Loop else",
+            "5.6 Chapter summary"
+          ]
+        },
+        {
+          "chapter": 6,
+          "title": "Functions",
+          "pdf_pages": [
+            147,
+            174
+          ],
+          "sections": [
+            "Introduction",
+            "6.1 Defining functions",
+            "6.2 Control flow",
+            "6.3 Variable scope",
+            "6.4 Parameters",
+            "6.5 Return values",
+            "6.6 Keyword arguments",
+            "6.7 Chapter summary"
+          ]
+        }
+      ],
+      "pages_in_scope": 80,
+      "counted_pages": [
+        {
+          "page": 95,
+          "chapter": 4,
+          "chars": 1200
+        },
+        {
+          "page": 96,
+          "chapter": 4,
+          "chars": 1075
+        },
+        {
+          "page": 97,
+          "chapter": 4,
+          "chars": 928
+        },
+        {
+          "page": 98,
+          "chapter": 4,
+          "chars": 1127
+        },
+        {
+          "page": 99,
+          "chapter": 4,
+          "chars": 730
+        },
+        {
+          "page": 100,
+          "chapter": 4,
+          "chars": 1898
+        },
+        {
+          "page": 101,
+          "chapter": 4,
+          "chars": 1093
+        },
+        {
+          "page": 102,
+          "chapter": 4,
+          "chars": 1248
+        },
+        {
+          "page": 103,
+          "chapter": 4,
+          "chars": 791
+        },
+        {
+          "page": 104,
+          "chapter": 4,
+          "chars": 1322
+        },
+        {
+          "page": 105,
+          "chapter": 4,
+          "chars": 961
+        },
+        {
+          "page": 106,
+          "chapter": 4,
+          "chars": 959
+        },
+        {
+          "page": 107,
+          "chapter": 4,
+          "chars": 964
+        },
+        {
+          "page": 108,
+          "chapter": 4,
+          "chars": 1175
+        },
+        {
+          "page": 109,
+          "chapter": 4,
+          "chars": 1271
+        },
+        {
+          "page": 110,
+          "chapter": 4,
+          "chars": 1282
+        },
+        {
+          "page": 111,
+          "chapter": 4,
+          "chars": 1498
+        },
+        {
+          "page": 112,
+          "chapter": 4,
+          "chars": 785
+        },
+        {
+          "page": 113,
+          "chapter": 4,
+          "chars": 1017
+        },
+        {
+          "page": 114,
+          "chapter": 4,
+          "chars": 618
+        },
+        {
+          "page": 115,
+          "chapter": 4,
+          "chars": 1004
+        },
+        {
+          "page": 116,
+          "chapter": 4,
+          "chars": 1338
+        },
+        {
+          "page": 117,
+          "chapter": 4,
+          "chars": 1089
+        },
+        {
+          "page": 118,
+          "chapter": 4,
+          "chars": 748
+        },
+        {
+          "page": 119,
+          "chapter": 4,
+          "chars": 1430
+        },
+        {
+          "page": 120,
+          "chapter": 4,
+          "chars": 1143
+        },
+        {
+          "page": 121,
+          "chapter": 4,
+          "chars": 1814
+        },
+        {
+          "page": 122,
+          "chapter": 4,
+          "chars": 788
+        },
+        {
+          "page": 123,
+          "chapter": 4,
+          "chars": 419
+        },
+        {
+          "page": 125,
+          "chapter": 5,
+          "chars": 1188
+        },
+        {
+          "page": 126,
+          "chapter": 5,
+          "chars": 1345
+        },
+        {
+          "page": 127,
+          "chapter": 5,
+          "chars": 1291
+        },
+        {
+          "page": 128,
+          "chapter": 5,
+          "chars": 1366
+        },
+        {
+          "page": 129,
+          "chapter": 5,
+          "chars": 1103
+        },
+        {
+          "page": 130,
+          "chapter": 5,
+          "chars": 1036
+        },
+        {
+          "page": 131,
+          "chapter": 5,
+          "chars": 1114
+        },
+        {
+          "page": 132,
+          "chapter": 5,
+          "chars": 1351
+        },
+        {
+          "page": 133,
+          "chapter": 5,
+          "chars": 1030
+        },
+        {
+          "page": 134,
+          "chapter": 5,
+          "chars": 553
+        },
+        {
+          "page": 135,
+          "chapter": 5,
+          "chars": 1064
+        },
+        {
+          "page": 136,
+          "chapter": 5,
+          "chars": 908
+        },
+        {
+          "page": 137,
+          "chapter": 5,
+          "chars": 1337
+        },
+        {
+          "page": 138,
+          "chapter": 5,
+          "chars": 917
+        },
+        {
+          "page": 139,
+          "chapter": 5,
+          "chars": 961
+        },
+        {
+          "page": 140,
+          "chapter": 5,
+          "chars": 1007
+        },
+        {
+          "page": 141,
+          "chapter": 5,
+          "chars": 1560
+        },
+        {
+          "page": 142,
+          "chapter": 5,
+          "chars": 612
+        },
+        {
+          "page": 143,
+          "chapter": 5,
+          "chars": 1717
+        },
+        {
+          "page": 144,
+          "chapter": 5,
+          "chars": 600
+        },
+        {
+          "page": 145,
+          "chapter": 5,
+          "chars": 810
+        },
+        {
+          "page": 147,
+          "chapter": 6,
+          "chars": 1066
+        },
+        {
+          "page": 148,
+          "chapter": 6,
+          "chars": 1281
+        },
+        {
+          "page": 149,
+          "chapter": 6,
+          "chars": 1276
+        },
+        {
+          "page": 150,
+          "chapter": 6,
+          "chars": 808
+        },
+        {
+          "page": 151,
+          "chapter": 6,
+          "chars": 1426
+        },
+        {
+          "page": 152,
+          "chapter": 6,
+          "chars": 988
+        },
+        {
+          "page": 153,
+          "chapter": 6,
+          "chars": 1012
+        },
+        {
+          "page": 154,
+          "chapter": 6,
+          "chars": 1415
+        },
+        {
+          "page": 155,
+          "chapter": 6,
+          "chars": 1098
+        },
+        {
+          "page": 156,
+          "chapter": 6,
+          "chars": 1020
+        },
+        {
+          "page": 157,
+          "chapter": 6,
+          "chars": 1034
+        },
+        {
+          "page": 158,
+          "chapter": 6,
+          "chars": 748
+        },
+        {
+          "page": 159,
+          "chapter": 6,
+          "chars": 1301
+        },
+        {
+          "page": 160,
+          "chapter": 6,
+          "chars": 1296
+        },
+        {
+          "page": 161,
+          "chapter": 6,
+          "chars": 1129
+        },
+        {
+          "page": 162,
+          "chapter": 6,
+          "chars": 1441
+        },
+        {
+          "page": 163,
+          "chapter": 6,
+          "chars": 1291
+        },
+        {
+          "page": 164,
+          "chapter": 6,
+          "chars": 1134
+        },
+        {
+          "page": 165,
+          "chapter": 6,
+          "chars": 1147
+        },
+        {
+          "page": 166,
+          "chapter": 6,
+          "chars": 1107
+        },
+        {
+          "page": 167,
+          "chapter": 6,
+          "chars": 849
+        },
+        {
+          "page": 168,
+          "chapter": 6,
+          "chars": 905
+        },
+        {
+          "page": 169,
+          "chapter": 6,
+          "chars": 1363
+        },
+        {
+          "page": 170,
+          "chapter": 6,
+          "chars": 1288
+        },
+        {
+          "page": 171,
+          "chapter": 6,
+          "chars": 1966
+        },
+        {
+          "page": 172,
+          "chapter": 6,
+          "chars": 618
+        }
+      ],
+      "excluded_pages": [
+        {
+          "page": 124,
+          "chapter": 4,
+          "reason": "only 0 content chars after normalization (< 300)"
+        },
+        {
+          "page": 146,
+          "chapter": 5,
+          "reason": "only 112 content chars after normalization (< 300)"
+        },
+        {
+          "page": 173,
+          "chapter": 6,
+          "reason": "only 261 content chars after normalization (< 300)"
+        },
+        {
+          "page": 174,
+          "chapter": 6,
+          "reason": "only 0 content chars after normalization (< 300)"
+        }
+      ],
+      "counted_page_total": 76,
+      "counted_char_total": 84592
+    }
+  ]
+}
