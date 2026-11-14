@@ -5,4 +5,4 @@
 - Lớp: L3B
 - Chủ đề và corpus: Truy xuất kiến thức lập trình Python, *Introduction to Python Programming* (OpenStax, CC BY-NC-SA 4.0), chương 4–6, 76 trang nội dung
 - Repo bài nộp: https://github.com/ndhai255/K5-L3B-DAY06-NguyenDucHai-2A202603943-DataIngestion
-- Commit chốt bài: <điền hash commit cuối sau khi push>
+- Commit chốt bài: 2d38ef56994573206d18a693705d891f18b58263
