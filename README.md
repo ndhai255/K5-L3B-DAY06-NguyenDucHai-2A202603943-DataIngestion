@@ -1,5 +1,37 @@
 # Day 06 · Data Ingestion Engineering
 
+## Bài làm: Nguyễn Đức Hải (2A202603943)
+
+- **Corpus:** *Introduction to Python Programming* (OpenStax, CC BY-NC-SA 4.0), chương 4–6, PDF trang 95–174, 76 trang nội dung. Xem [data/manifest.json](data/manifest.json).
+- **Embedding:** OpenAI `text-embedding-3-small`, 1536 chiều. **Vector store:** PostgreSQL 16 + pgvector 0.8.7, tìm kiếm cosine chính xác.
+- **Cấu hình:** A = cắt cố định 500/50; B = theo đoạn, tối đa 1000; C = B + lọc `chapter`.
+- **Báo cáo:** [report/individual/2A202603943_NguyenDucHai.md](report/individual/2A202603943_NguyenDucHai.md). **Nhật ký thí nghiệm:** [artifacts/experiment_log.csv](artifacts/experiment_log.csv). **Kết quả:** [starter/results/](starter/results/README.md).
+
+### Tái lập
+Cần Python 3.11–3.14, Docker và một OpenAI API key. Các lệnh chạy từ thư mục `starter/`:
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt          # psycopg 3.3.8, pypdf 6.x, python-dotenv 1.x, openai 3.50.0
+cp .env.example .env                      # điền OPENAI_API_KEY và EMBEDDING_MODEL=text-embedding-3-small
+docker compose -p day6_student_starter up -d --wait
+python scripts/check_setup.py             # kỳ vọng: Setup OK
+
+# PDF gốc không commit (giấy phép yêu cầu ghi nguồn trên từng trang); tải về data/raw/:
+curl -L -o data/raw/Introduction_to_Python_Programming-WEB.pdf \
+  https://assets.openstax.org/oscms-prodcms/media/documents/Introduction_to_Python_Programming-WEB.pdf
+
+python scripts/build_manifest.py          # manifest, data/processed/pages.jsonl, results/ingest_log.csv
+python scripts/verify_benchmark.py        # kỳ vọng: Benchmark OK
+python -m src.run                         # ingest A/B/C, chạy 24 câu, ghi traces/summary/stats và mẫu chấm tay
+python -m src.run --reingest-check        # nạp lại lần 2, số dòng không đổi
+python scripts/aggregate_audit.py         # tổng hợp nhãn trong results/audit/
+```
+
+`src.run` không ghi đè các file chấm tay đã có, trừ khi chạy với cờ `--overwrite-audit`. Bản PDF đã dùng có sha256 ghi trong manifest.
+
+---
+
 **Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**
 
 Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, rồi đo xem cách chuẩn bị dữ liệu nào hiệu quả nhất.

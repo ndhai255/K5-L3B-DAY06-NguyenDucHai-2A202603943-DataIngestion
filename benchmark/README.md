@@ -68,3 +68,4 @@ Các đoạn `evidence_quote` là trích ngắn từ *Introduction to Python Pro
 ## Nhật ký thay đổi
 
 - 2026-11-14: tạo bộ 24 câu, chạy `verify_benchmark.py` kết quả `Benchmark OK`. Chưa chạy retrieval.
+- 2026-11-14: chạy retrieval A/B/C (`python -m src.run`). Sau đó không sửa câu hỏi, nhãn hay split. Khi chấm tay phát hiện `p140` cũng chứa evidence tương đương cho q21 (test), nhưng **không** thêm vào `alternative_evidence` vì đã xem test; ghi thành hạn chế trong báo cáo.

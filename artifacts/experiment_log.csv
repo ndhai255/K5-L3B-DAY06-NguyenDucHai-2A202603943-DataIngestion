@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,"fixed_size (cửa sổ ký tự, cắt ở khoảng trắng gần nhất)",500,50,"document_id, source, page, chapter, chapter_title, sections, char_start/char_end, content_hash",none,"OpenAI text-embedding-3-small, 1536d, cosine (pgvector exact)","Baseline: chunk nhỏ, tập trung nhưng dễ cắt đôi câu evidence",5/18,8/18,1/6,2/6,"220 chunk; dev page_hit_only 5/18 (đúng trang gold nhưng chunk thiếu evidence); ingest 24.975 token, 2,6 s"
+B,by_paragraph (gom khối đoạn; khối quá dài cắt theo câu),1000 (max),0,"document_id, source, page, chapter, chapter_title, sections, char_start/char_end, content_hash",none,"OpenAI text-embedding-3-small, 1536d, cosine (pgvector exact)","Cắt ở ranh giới đoạn giữ trọn câu và ý nên Evidence Hit@3 và coherence cao hơn A",6/18,11/18,1/6,3/6,"131 chunk; ranh giới đoạn suy từ độ rộng dòng (dòng >= 90 ký tự là đoạn còn tiếp); ingest 23.022 token, 1,2 s"
+C,by_paragraph (giống hệt B),1000 (max),0,"document_id, source, page, chapter, chapter_title, sections, char_start/char_end, content_hash","chapter = filter của câu hỏi (chỉ 5 câu có filter)","OpenAI text-embedding-3-small, 1536d, cosine (pgvector exact)","Lọc chapter loại chunk cùng từ khóa ở chương khác, cải thiện câu có filter; câu không filter giữ nguyên như B",8/18,12/18,2/6,5/6,"Dùng lại 131 chunk và vector của B (0 token); top-3 giống B trên 19 câu không filter, Hit khác B ở 4/5 câu filter; được chọn theo dev Hit@3"
