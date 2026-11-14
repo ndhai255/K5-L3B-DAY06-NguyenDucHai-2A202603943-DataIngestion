@@ -1,0 +1,681 @@
+position_id,page,offset,strategy,chunk_id,chunk_chars,chunk_text,note,score_0_2,reason
+1,95,600,A,openstax-intro-python:p95:fixed:1,493,"Instead of always taking the left path, a program uses the path
+width to decide which path to take. If the left path is wider, take the right path. Else, take the left path.
+A branch is a group of statements that execute based on a condition. The Expressions chapter introduced
+expressions. This chapter explores how expressions can be used as conditions to make decisions in programs.
+4.1 Boolean values
+Learning objectives
+By the end of this section you should be able to
+• Explain a Boolean",,,
+1,95,600,B,openstax-intro-python:p95:paragraph:0,995,"Figure 4.1 credit: modification of work ""Fork In The Road"", by Ian Sane/Flickr, CC BY 2.0
+Chapter Outline
+4.1 Boolean values
+4.2 If-else statements
+4.3 Boolean operations
+4.4 Operator precedence
+4.5 Chained decisions
+4.6 Nested decisions
+4.7 Conditional expressions
+4.8 Chapter summary
+Introduction
+The Python interpreter follows a single path of execution when executing a program. What if a programmer
+wants to define multiple possible paths? Ex: Instead of always taking the left path, a program uses the path
+width to decide which path to take. If the left path is wider, take the right path. Else, take the left path.
+A branch is a group of statements that execute based on a condition. The Expressions chapter introduced
+expressions. This chapter explores how expressions can be used as conditions to make decisions in programs.
+4.1 Boolean values
+Learning objectives
+By the end of this section you should be able to
+• Explain a Boolean value.
+• Use bool variables to store Boolean values.",,,
+1,95,600,C,openstax-intro-python:p95:paragraph:0,995,"Figure 4.1 credit: modification of work ""Fork In The Road"", by Ian Sane/Flickr, CC BY 2.0
+Chapter Outline
+4.1 Boolean values
+4.2 If-else statements
+4.3 Boolean operations
+4.4 Operator precedence
+4.5 Chained decisions
+4.6 Nested decisions
+4.7 Conditional expressions
+4.8 Chapter summary
+Introduction
+The Python interpreter follows a single path of execution when executing a program. What if a programmer
+wants to define multiple possible paths? Ex: Instead of always taking the left path, a program uses the path
+width to decide which path to take. If the left path is wider, take the right path. Else, take the left path.
+A branch is a group of statements that execute based on a condition. The Expressions chapter introduced
+expressions. This chapter explores how expressions can be used as conditions to make decisions in programs.
+4.1 Boolean values
+Learning objectives
+By the end of this section you should be able to
+• Explain a Boolean value.
+• Use bool variables to store Boolean values.",same chunk as B,,
+2,96,537,A,openstax-intro-python:p96:fixed:1,498,"sign
+Example: Crosswalk sign; ch 4, video 1 (https://www.openstax.org/r/crosswalk-sign)
+CONCEPTS IN PRACTICE
+Using Boolean variables
+Consider the following code:
+is_fruit = ""True""
+is_vegetable = 0
+is_dessert = False
+1 . What is the data type of is_fruit?
+a. Boolean
+b. integer
+c. string
+2 . What is the data type of is_vegetable?
+a. Boolean
+b. integer
+c. string
+3 . What is the data type of is_dessert?
+a. Boolean
+b. integer
+c. string
+4 . How many values can a Boolean variable represent?
+a. 2
+b. 4",,,
+2,96,537,B,openstax-intro-python:p96:paragraph:0,993,"bool data type
+People often ask binary questions such as yes/no or true/false questions. Ex: Do you like pineapple on pizza?
+Ex: True or false: I like pineapple on pizza. The response is a Boolean value, meaning the value is either true or
+false. The bool data type, standing for Boolean, represents a binary value of either true or false. true and
+false are keywords, and capitalization is required.
+CHECKPOINT
+Example: Crosswalk sign
+Example: Crosswalk sign; ch 4, video 1 (https://www.openstax.org/r/crosswalk-sign)
+CONCEPTS IN PRACTICE
+Using Boolean variables
+Consider the following code:
+is_fruit = ""True""
+is_vegetable = 0
+is_dessert = False
+1 . What is the data type of is_fruit?
+a. Boolean
+b. integer
+c. string
+2 . What is the data type of is_vegetable?
+a. Boolean
+b. integer
+c. string
+3 . What is the data type of is_dessert?
+a. Boolean
+b. integer
+c. string
+4 . How many values can a Boolean variable represent?
+a. 2
+b. 4
+c. 8
+5 . Which is a valid value for a Boolean variable?
+a. true",,,
+2,96,537,C,openstax-intro-python:p96:paragraph:0,993,"bool data type
+People often ask binary questions such as yes/no or true/false questions. Ex: Do you like pineapple on pizza?
+Ex: True or false: I like pineapple on pizza. The response is a Boolean value, meaning the value is either true or
+false. The bool data type, standing for Boolean, represents a binary value of either true or false. true and
+false are keywords, and capitalization is required.
+CHECKPOINT
+Example: Crosswalk sign
+Example: Crosswalk sign; ch 4, video 1 (https://www.openstax.org/r/crosswalk-sign)
+CONCEPTS IN PRACTICE
+Using Boolean variables
+Consider the following code:
+is_fruit = ""True""
+is_vegetable = 0
+is_dessert = False
+1 . What is the data type of is_fruit?
+a. Boolean
+b. integer
+c. string
+2 . What is the data type of is_vegetable?
+a. Boolean
+b. integer
+c. string
+3 . What is the data type of is_dessert?
+a. Boolean
+b. integer
+c. string
+4 . How many values can a Boolean variable represent?
+a. 2
+b. 4
+c. 8
+5 . Which is a valid value for a Boolean variable?
+a. true",same chunk as B,,
+3,97,464,A,openstax-intro-python:p97:fixed:0,495,"print(type(is_dessert))
+What is the output?
+a. <class 'bool'>
+b. <class 'int'>
+c. Error
+Type conversion with bool()
+Deciding whether a value is true or false is helpful when writing programs/statements based on decisions.
+Converting data types to Booleans can seem unintuitive at first. Ex: Is ""ice cream"" True? But the
+conversion is actually simple.
+bool() converts a value to a Boolean value, True or False.
+• True: any non-zero number, any non-empty string
+• False: 0, empty string
+CHECKPOINT",,,
+3,97,464,B,openstax-intro-python:p97:paragraph:0,928,"print(type(is_dessert))
+What is the output?
+a. <class 'bool'>
+b. <class 'int'>
+c. Error
+Type conversion with bool()
+Deciding whether a value is true or false is helpful when writing programs/statements based on decisions.
+Converting data types to Booleans can seem unintuitive at first. Ex: Is ""ice cream"" True? But the
+conversion is actually simple.
+bool() converts a value to a Boolean value, True or False.
+• True: any non-zero number, any non-empty string
+• False: 0, empty string
+CHECKPOINT
+Converting integers, floats, and strings using bool()
+Converting integers, floats, and strings using bool(); ch 4, video 2 (https://www.openstax.org/r/converting-using-bool)
+CONCEPTS IN PRACTICE
+Converting numeric types and strings to Booleans
+7 . bool(0.000)
+a. True
+b. False
+8 . bool(-1)
+a. True
+b. False
+9 . bool("""")
+a. True
+b. False
+10 . bool(""0"")
+a. True
+b. False
+11 . Given input False, what is bool(input())?
+a. True
+b. False",,,
+3,97,464,C,openstax-intro-python:p97:paragraph:0,928,"print(type(is_dessert))
+What is the output?
+a. <class 'bool'>
+b. <class 'int'>
+c. Error
+Type conversion with bool()
+Deciding whether a value is true or false is helpful when writing programs/statements based on decisions.
+Converting data types to Booleans can seem unintuitive at first. Ex: Is ""ice cream"" True? But the
+conversion is actually simple.
+bool() converts a value to a Boolean value, True or False.
+• True: any non-zero number, any non-empty string
+• False: 0, empty string
+CHECKPOINT
+Converting integers, floats, and strings using bool()
+Converting integers, floats, and strings using bool(); ch 4, video 2 (https://www.openstax.org/r/converting-using-bool)
+CONCEPTS IN PRACTICE
+Converting numeric types and strings to Booleans
+7 . bool(0.000)
+a. True
+b. False
+8 . bool(-1)
+a. True
+b. False
+9 . bool("""")
+a. True
+b. False
+10 . bool(""0"")
+a. True
+b. False
+11 . Given input False, what is bool(input())?
+a. True
+b. False",same chunk as B,,
+4,98,563,A,openstax-intro-python:p98:fixed:1,485,"and the result is either true or false. Ex: is_admin = (user == ""admin""). user is compared with ""admin""
+using the == operator, which tests for equality. The Boolean variable, is_admin, is assigned with the Boolean
+result.
+The 6 comparison operators:
+• equal to: ==
+• not equal to: !=
+• greater than: >
+• less than: <
+• greater than or equal to: >=
+• less than or equal to: <=
+CHECKPOINT
+Example: Rolling a d20 in a tabletop game
+Example: Rolling a d20 in a tabletop game; ch 4, video 3",,,
+4,98,563,B,openstax-intro-python:p98:paragraph:0,884,"CONCEPTS IN PRACTICE
+Converting Booleans to numeric types and strings
+Given is_on = True, what is the value of each expression?
+12 . float(is_on)
+a. 0.0
+b. 1.0
+13 . str(is_on)
+a. ""is_on""
+b. ""True""
+14 . int(is_on)
+a. 0
+b. 1
+Comparison operators
+Programmers often have to answer questions like ""Is the current user the admin?"" A programmer may want to
+compare a string variable, user, to the string, ""admin"". Comparison operators are used to compare values,
+and the result is either true or false. Ex: is_admin = (user == ""admin""). user is compared with ""admin""
+using the == operator, which tests for equality. The Boolean variable, is_admin, is assigned with the Boolean
+result.
+The 6 comparison operators:
+• equal to: ==
+• not equal to: !=
+• greater than: >
+• less than: <
+• greater than or equal to: >=
+• less than or equal to: <=
+CHECKPOINT
+Example: Rolling a d20 in a tabletop game",,,
+4,98,563,C,openstax-intro-python:p98:paragraph:0,884,"CONCEPTS IN PRACTICE
+Converting Booleans to numeric types and strings
+Given is_on = True, what is the value of each expression?
+12 . float(is_on)
+a. 0.0
+b. 1.0
+13 . str(is_on)
+a. ""is_on""
+b. ""True""
+14 . int(is_on)
+a. 0
+b. 1
+Comparison operators
+Programmers often have to answer questions like ""Is the current user the admin?"" A programmer may want to
+compare a string variable, user, to the string, ""admin"". Comparison operators are used to compare values,
+and the result is either true or false. Ex: is_admin = (user == ""admin""). user is compared with ""admin""
+using the == operator, which tests for equality. The Boolean variable, is_admin, is assigned with the Boolean
+result.
+The 6 comparison operators:
+• equal to: ==
+• not equal to: !=
+• greater than: >
+• less than: <
+• greater than or equal to: >=
+• less than or equal to: <=
+CHECKPOINT
+Example: Rolling a d20 in a tabletop game",same chunk as B,,
+5,99,365,A,openstax-intro-python:p99:fixed:0,498,"b. False
+16 . w = 0
+compare_result = (w != 0.4)
+a. True
+b. False
+17 . v = 4
+compare_result = (v < 4.0)
+a. True
+b. False
+18 . y = 2
+compare_result = (y > ""ab"")
+a. True
+b. False
+c. Error
+19 . z = ""cilantro""
+compare_result = (z == ""coriander"")
+a. True
+b. False
+20 . a = ""dog""
+compare_result = (a < ""cat"")
+a. True
+b. False
+= VS ==
+A common mistake is using = for comparison instead of ==. Ex: is_zero = num=0 will always assign
+is_zero and num with 0, regardless of num's original value. The = operator",,,
+5,99,365,B,openstax-intro-python:p99:paragraph:0,730,"b. False
+16 . w = 0
+compare_result = (w != 0.4)
+a. True
+b. False
+17 . v = 4
+compare_result = (v < 4.0)
+a. True
+b. False
+18 . y = 2
+compare_result = (y > ""ab"")
+a. True
+b. False
+c. Error
+19 . z = ""cilantro""
+compare_result = (z == ""coriander"")
+a. True
+b. False
+20 . a = ""dog""
+compare_result = (a < ""cat"")
+a. True
+b. False
+= VS ==
+A common mistake is using = for comparison instead of ==. Ex: is_zero = num=0 will always assign
+is_zero and num with 0, regardless of num's original value. The = operator performs assignment and will
+modify the variable. The == operator performs comparison, does not modify the variable, and produces
+True or False.
+EXPLORING FURTHER
+• Unicode Basic Latin Chart (https://openstax.org/r/100unicodelatin)",,,
+5,99,365,C,openstax-intro-python:p99:paragraph:0,730,"b. False
+16 . w = 0
+compare_result = (w != 0.4)
+a. True
+b. False
+17 . v = 4
+compare_result = (v < 4.0)
+a. True
+b. False
+18 . y = 2
+compare_result = (y > ""ab"")
+a. True
+b. False
+c. Error
+19 . z = ""cilantro""
+compare_result = (z == ""coriander"")
+a. True
+b. False
+20 . a = ""dog""
+compare_result = (a < ""cat"")
+a. True
+b. False
+= VS ==
+A common mistake is using = for comparison instead of ==. Ex: is_zero = num=0 will always assign
+is_zero and num with 0, regardless of num's original value. The = operator performs assignment and will
+modify the variable. The == operator performs comparison, does not modify the variable, and produces
+True or False.
+EXPLORING FURTHER
+• Unicode Basic Latin Chart (https://openstax.org/r/100unicodelatin)",same chunk as B,,
+6,100,949,A,openstax-intro-python:p100:fixed:2,493,"statements is run.
+• Identify the components of an if and if-else statement and the necessary formatting.
+• Create an if-else statement to perform an operation when a condition is true and another operation
+otherwise.
+if statement
+If the weather is rainy, grab an umbrella! People make decisions based on conditions like if the weather is
+rainy, and programs perform operations based on conditions like a variable's value. Ex: A program adds two
+numbers. If the result is negative, the program",,,
+6,100,949,B,openstax-intro-python:p100:paragraph:0,998,"Friday Boolean
+""It's Friday, I'm in love"" —from ""Friday I'm in Love,"" a song released by the Cure in 1992.
+Write a program that reads in the day of the week. Assign the Boolean variable, in_love, with the result of
+whether the day is Friday or not.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+4-1-boolean-values)
+Even numbers
+Write a program that reads in an integer and prints whether the integer is even or not. Remember, a
+number is even if the number is divisible by 2. To test this use number % 2 == 0. Ex: If the input is 6, the
+output is ""6 is even: True"".
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+4-1-boolean-values)
+4.2 If-else statements
+Learning objectives
+By the end of this section you should be able to
+• Identify which operations are performed when a program with if and if-else statements is run.
+• Identify the components of an if and if-else statement and the necessary formatting.",,,
+6,100,949,C,openstax-intro-python:p100:paragraph:0,998,"Friday Boolean
+""It's Friday, I'm in love"" —from ""Friday I'm in Love,"" a song released by the Cure in 1992.
+Write a program that reads in the day of the week. Assign the Boolean variable, in_love, with the result of
+whether the day is Friday or not.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+4-1-boolean-values)
+Even numbers
+Write a program that reads in an integer and prints whether the integer is even or not. Remember, a
+number is even if the number is divisible by 2. To test this use number % 2 == 0. Ex: If the input is 6, the
+output is ""6 is even: True"".
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+4-1-boolean-values)
+4.2 If-else statements
+Learning objectives
+By the end of this section you should be able to
+• Identify which operations are performed when a program with if and if-else statements is run.
+• Identify the components of an if and if-else statement and the necessary formatting.",same chunk as B,,
+7,101,546,A,openstax-intro-python:p101:fixed:1,497,"12:
+  print(""Discount for children available"")
+a. age
+b. age < 12
+c. print(""Discount for children available"")
+2 . Given the following, which lines execute if the condition is true?
+1 print(""Have a great day."")
+2 if is_raining:
+3 print(""Don't forget an umbrella!"")
+4 print(""See you soon."")
+a. 1, 2, 3
+b. 1, 2, 4
+c. 1, 2, 3, 4
+3 . Given the following (same as above), which lines execute if the condition is False?
+1 print(""Have a great day."")
+2 if is_raining:
+3 print(""Don't forget an umbrella!"")
+4",,,
+7,101,546,B,openstax-intro-python:p101:paragraph:0,989,"CHECKPOINT
+Example: Quantity check
+Example: Quantity check; ch 4, video 4 (https://www.openstax.org/r/quantity-check)
+USING BOOLEAN VARIABLES
+A Boolean variable already has a value of True or False and can be used directly in a condition rather than
+using the equality operator. Ex: if is_raining == True: can be simplified to if is_raining:.
+CONCEPTS IN PRACTICE
+Using if statements
+1 . Given the following, which part is the condition?
+if age < 12:
+  print(""Discount for children available"")
+a. age
+b. age < 12
+c. print(""Discount for children available"")
+2 . Given the following, which lines execute if the condition is true?
+1 print(""Have a great day."")
+2 if is_raining:
+3 print(""Don't forget an umbrella!"")
+4 print(""See you soon."")
+a. 1, 2, 3
+b. 1, 2, 4
+c. 1, 2, 3, 4
+3 . Given the following (same as above), which lines execute if the condition is False?
+1 print(""Have a great day."")
+2 if is_raining:
+3 print(""Don't forget an umbrella!"")
+4 print(""See you soon."")
+a. 1, 2, 3
+b. 1, 2, 4",,,
+7,101,546,C,openstax-intro-python:p101:paragraph:0,989,"CHECKPOINT
+Example: Quantity check
+Example: Quantity check; ch 4, video 4 (https://www.openstax.org/r/quantity-check)
+USING BOOLEAN VARIABLES
+A Boolean variable already has a value of True or False and can be used directly in a condition rather than
+using the equality operator. Ex: if is_raining == True: can be simplified to if is_raining:.
+CONCEPTS IN PRACTICE
+Using if statements
+1 . Given the following, which part is the condition?
+if age < 12:
+  print(""Discount for children available"")
+a. age
+b. age < 12
+c. print(""Discount for children available"")
+2 . Given the following, which lines execute if the condition is true?
+1 print(""Have a great day."")
+2 if is_raining:
+3 print(""Don't forget an umbrella!"")
+4 print(""See you soon."")
+a. 1, 2, 3
+b. 1, 2, 4
+c. 1, 2, 3, 4
+3 . Given the following (same as above), which lines execute if the condition is False?
+1 print(""Have a great day."")
+2 if is_raining:
+3 print(""Don't forget an umbrella!"")
+4 print(""See you soon."")
+a. 1, 2, 3
+b. 1, 2, 4",same chunk as B,,
+8,102,624,A,openstax-intro-python:p102:fixed:1,495,"mile away, we'll walk. Else, we'll
+drive.
+An else statement is used with an if statement and contains a body of statements that is executed when the
+if statement's condition is false. When an if-else statement is executed, one and only one of the branches
+is taken. That is, the body of the if or the body of the else is executed. Note: The else statement is at the
+same level of indentation as the if statement, and the body is indented.
+if-else statement template:
+1 # Statements before
+2
+3 if",,,
+8,102,624,B,openstax-intro-python:p102:paragraph:0,1000,"num = num + 50
+a. -10
+b. 40
+c. 75
+5 . Given input 10, what is the final value of positive_num?
+positive_num = int(input(""Enter a positive number:""))
+if positive_num < 0:
+  print(""Negative input set to 0"")
+positive_num = 0
+a. 10
+b. 0
+c. Error
+if-else statement
+An if statement defines actions to be performed when a condition is true. What if an action needs to be
+performed only when the condition is false? Ex: If the restaurant is less than a mile away, we'll walk. Else, we'll
+drive.
+An else statement is used with an if statement and contains a body of statements that is executed when the
+if statement's condition is false. When an if-else statement is executed, one and only one of the branches
+is taken. That is, the body of the if or the body of the else is executed. Note: The else statement is at the
+same level of indentation as the if statement, and the body is indented.
+if-else statement template:
+1 # Statements before
+2
+3 if condition:
+4 # Body
+5 else:
+6 # Body
+7
+8 # Statements after",,,
+8,102,624,C,openstax-intro-python:p102:paragraph:0,1000,"num = num + 50
+a. -10
+b. 40
+c. 75
+5 . Given input 10, what is the final value of positive_num?
+positive_num = int(input(""Enter a positive number:""))
+if positive_num < 0:
+  print(""Negative input set to 0"")
+positive_num = 0
+a. 10
+b. 0
+c. Error
+if-else statement
+An if statement defines actions to be performed when a condition is true. What if an action needs to be
+performed only when the condition is false? Ex: If the restaurant is less than a mile away, we'll walk. Else, we'll
+drive.
+An else statement is used with an if statement and contains a body of statements that is executed when the
+if statement's condition is false. When an if-else statement is executed, one and only one of the branches
+is taken. That is, the body of the if or the body of the else is executed. Note: The else statement is at the
+same level of indentation as the if statement, and the body is indented.
+if-else statement template:
+1 # Statements before
+2
+3 if condition:
+4 # Body
+5 else:
+6 # Body
+7
+8 # Statements after",same chunk as B,,
+9,103,395,A,openstax-intro-python:p103:fixed:0,494,"if x >= 15:
+  # Do something
+else:
+  # Do something else
+a. x >= 15
+b. x <= 15
+c. x < 15
+7 . Given x = 40, what is the final value of y?
+if x > 30:
+  y = x - 10
+else:
+  y = x + 10
+a. 30
+b. 40
+c. 50
+8 . Given y = 50, which is not a possible final value of y?
+if x < 50:
+  y = y / 2
+else:
+  y = y * 2
+y = y + 5
+a. 30
+b. 55
+c. 105
+Improved division
+The following program divides two integers. Division by 0 produces an error. Modify the program to read in
+a new denominator (with no prompt) if the",,,
+9,103,395,B,openstax-intro-python:p103:paragraph:0,791,"if x >= 15:
+  # Do something
+else:
+  # Do something else
+a. x >= 15
+b. x <= 15
+c. x < 15
+7 . Given x = 40, what is the final value of y?
+if x > 30:
+  y = x - 10
+else:
+  y = x + 10
+a. 30
+b. 40
+c. 50
+8 . Given y = 50, which is not a possible final value of y?
+if x < 50:
+  y = y / 2
+else:
+  y = y * 2
+y = y + 5
+a. 30
+b. 55
+c. 105
+Improved division
+The following program divides two integers. Division by 0 produces an error. Modify the program to read in
+a new denominator (with no prompt) if the denominator is 0.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/4-2-if-else-statements)
+Converting temperature units
+The following program reads in a temperature as a float and the unit as a string: ""f"" for Fahrenheit or ""c""
+for Celsius.
+TRY IT
+TRY IT",,,
+9,103,395,C,openstax-intro-python:p103:paragraph:0,791,"if x >= 15:
+  # Do something
+else:
+  # Do something else
+a. x >= 15
+b. x <= 15
+c. x < 15
+7 . Given x = 40, what is the final value of y?
+if x > 30:
+  y = x - 10
+else:
+  y = x + 10
+a. 30
+b. 40
+c. 50
+8 . Given y = 50, which is not a possible final value of y?
+if x < 50:
+  y = y / 2
+else:
+  y = y * 2
+y = y + 5
+a. 30
+b. 55
+c. 105
+Improved division
+The following program divides two integers. Division by 0 produces an error. Modify the program to read in
+a new denominator (with no prompt) if the denominator is 0.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/4-2-if-else-statements)
+Converting temperature units
+The following program reads in a temperature as a float and the unit as a string: ""f"" for Fahrenheit or ""c""
+for Celsius.
+TRY IT
+TRY IT",same chunk as B,,
+10,104,661,A,openstax-intro-python:p104:fixed:1,495,"Learning objectives
+By the end of this section you should be able to
+• Explain the purpose of logical operators.
+• Describe the truth tables for and, or, and not.
+• Create expressions with logical operators.
+• Interpret if-else statements with conditions using logical operators.
+Logical operator: and
+Decisions are often based on multiple conditions. Ex: A program printing if a business is open may check that
+hour >= 9 and hour < 17. A logical operator takes condition operand(s) and produces",,,
+10,104,661,B,openstax-intro-python:p104:paragraph:0,744,"Calculate new_temp, the result of converting temp from Fahrenheit to Celsius or Celsius to Fahrenheit
+based on unit. Calculate new_unit: ""c"" if unit is ""f"" and ""f"" if unit is ""c"".
+Conversion formulas:
+• Degrees Celsius = (degrees Fahrenheit - 32) * 5/9
+• Degrees Fahrenheit = (degrees Celsius * 5/9) + 32
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/4-2-if-else-statements)
+4.3 Boolean operations
+Learning objectives
+By the end of this section you should be able to
+• Explain the purpose of logical operators.
+• Describe the truth tables for and, or, and not.
+• Create expressions with logical operators.
+• Interpret if-else statements with conditions using logical operators.
+Logical operator: and",,,
+10,104,661,C,openstax-intro-python:p104:paragraph:0,744,"Calculate new_temp, the result of converting temp from Fahrenheit to Celsius or Celsius to Fahrenheit
+based on unit. Calculate new_unit: ""c"" if unit is ""f"" and ""f"" if unit is ""c"".
+Conversion formulas:
+• Degrees Celsius = (degrees Fahrenheit - 32) * 5/9
+• Degrees Fahrenheit = (degrees Celsius * 5/9) + 32
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/4-2-if-else-statements)
+4.3 Boolean operations
+Learning objectives
+By the end of this section you should be able to
+• Explain the purpose of logical operators.
+• Describe the truth tables for and, or, and not.
+• Create expressions with logical operators.
+• Interpret if-else statements with conditions using logical operators.
+Logical operator: and",same chunk as B,,

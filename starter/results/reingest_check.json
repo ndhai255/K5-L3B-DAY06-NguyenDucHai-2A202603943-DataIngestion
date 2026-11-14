@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-11-14T11:11:35",
+  "rows_before": {
+    "A": 220,
+    "B": 131,
+    "C": 131
+  },
+  "rows_after": {
+    "A": 220,
+    "B": 131,
+    "C": 131
+  },
+  "second_ingest": {
+    "A": {
+      "chunks": 220,
+      "written": 0,
+      "embedded_texts": 0,
+      "reused_vectors": 0,
+      "deleted_obsolete": 0,
+      "tokens": 0,
+      "seconds": 0.026
+    },
+    "B": {
+      "chunks": 131,
+      "written": 0,
+      "embedded_texts": 0,
+      "reused_vectors": 0,
+      "deleted_obsolete": 0,
+      "tokens": 0,
+      "seconds": 0.027
+    },
+    "C": {
+      "chunks": 131,
+      "written": 0,
+      "embedded_texts": 0,
+      "reused_vectors": 0,
+      "deleted_obsolete": 0,
+      "tokens": 0,
+      "seconds": 0.028
+    }
+  },
+  "expected_rows": {
+    "A": 220,
+    "B": 131,
+    "C": 131
+  },
+  "passed": true
+}

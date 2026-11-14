@@ -1,0 +1,343 @@
+{
+  "generated_at": "2026-11-14T11:11:24",
+  "model": "text-embedding-3-small",
+  "top_k": 3,
+  "strategies": {
+    "A": {
+      "chunker": "fixed_size",
+      "params": {
+        "size": 500,
+        "overlap": 50
+      },
+      "use_filter": false
+    },
+    "B": {
+      "chunker": "by_paragraph",
+      "params": {
+        "max_size": 1000
+      },
+      "use_filter": false
+    },
+    "C": {
+      "chunker": "by_paragraph",
+      "params": {
+        "max_size": 1000
+      },
+      "use_filter": true
+    }
+  },
+  "metrics": {
+    "A": {
+      "all": {
+        "hit_at_1": {
+          "n": 6,
+          "N": 24,
+          "text": "6/24",
+          "rate": 0.25
+        },
+        "hit_at_3": {
+          "n": 10,
+          "N": 24,
+          "text": "10/24",
+          "rate": 0.4167
+        },
+        "page_hit_only": {
+          "n": 7,
+          "N": 24,
+          "text": "7/24",
+          "rate": 0.2917
+        },
+        "filter_questions": {
+          "hit_at_3": {
+            "n": 1,
+            "N": 5,
+            "text": "1/5",
+            "rate": 0.2
+          },
+          "top3_filter_compliant": {
+            "n": 0,
+            "N": 5,
+            "text": "0/5",
+            "rate": 0.0
+          }
+        }
+      },
+      "dev": {
+        "hit_at_1": {
+          "n": 5,
+          "N": 18,
+          "text": "5/18",
+          "rate": 0.2778
+        },
+        "hit_at_3": {
+          "n": 8,
+          "N": 18,
+          "text": "8/18",
+          "rate": 0.4444
+        },
+        "page_hit_only": {
+          "n": 5,
+          "N": 18,
+          "text": "5/18",
+          "rate": 0.2778
+        },
+        "filter_questions": {
+          "hit_at_3": {
+            "n": 1,
+            "N": 3,
+            "text": "1/3",
+            "rate": 0.3333
+          },
+          "top3_filter_compliant": {
+            "n": 0,
+            "N": 3,
+            "text": "0/3",
+            "rate": 0.0
+          }
+        }
+      },
+      "test": {
+        "hit_at_1": {
+          "n": 1,
+          "N": 6,
+          "text": "1/6",
+          "rate": 0.1667
+        },
+        "hit_at_3": {
+          "n": 2,
+          "N": 6,
+          "text": "2/6",
+          "rate": 0.3333
+        },
+        "page_hit_only": {
+          "n": 2,
+          "N": 6,
+          "text": "2/6",
+          "rate": 0.3333
+        },
+        "filter_questions": {
+          "hit_at_3": {
+            "n": 0,
+            "N": 2,
+            "text": "0/2",
+            "rate": 0.0
+          },
+          "top3_filter_compliant": {
+            "n": 0,
+            "N": 2,
+            "text": "0/2",
+            "rate": 0.0
+          }
+        }
+      }
+    },
+    "B": {
+      "all": {
+        "hit_at_1": {
+          "n": 7,
+          "N": 24,
+          "text": "7/24",
+          "rate": 0.2917
+        },
+        "hit_at_3": {
+          "n": 14,
+          "N": 24,
+          "text": "14/24",
+          "rate": 0.5833
+        },
+        "page_hit_only": {
+          "n": 1,
+          "N": 24,
+          "text": "1/24",
+          "rate": 0.0417
+        },
+        "filter_questions": {
+          "hit_at_3": {
+            "n": 2,
+            "N": 5,
+            "text": "2/5",
+            "rate": 0.4
+          },
+          "top3_filter_compliant": {
+            "n": 0,
+            "N": 5,
+            "text": "0/5",
+            "rate": 0.0
+          }
+        }
+      },
+      "dev": {
+        "hit_at_1": {
+          "n": 6,
+          "N": 18,
+          "text": "6/18",
+          "rate": 0.3333
+        },
+        "hit_at_3": {
+          "n": 11,
+          "N": 18,
+          "text": "11/18",
+          "rate": 0.6111
+        },
+        "page_hit_only": {
+          "n": 1,
+          "N": 18,
+          "text": "1/18",
+          "rate": 0.0556
+        },
+        "filter_questions": {
+          "hit_at_3": {
+            "n": 2,
+            "N": 3,
+            "text": "2/3",
+            "rate": 0.6667
+          },
+          "top3_filter_compliant": {
+            "n": 0,
+            "N": 3,
+            "text": "0/3",
+            "rate": 0.0
+          }
+        }
+      },
+      "test": {
+        "hit_at_1": {
+          "n": 1,
+          "N": 6,
+          "text": "1/6",
+          "rate": 0.1667
+        },
+        "hit_at_3": {
+          "n": 3,
+          "N": 6,
+          "text": "3/6",
+          "rate": 0.5
+        },
+        "page_hit_only": {
+          "n": 0,
+          "N": 6,
+          "text": "0/6",
+          "rate": 0.0
+        },
+        "filter_questions": {
+          "hit_at_3": {
+            "n": 0,
+            "N": 2,
+            "text": "0/2",
+            "rate": 0.0
+          },
+          "top3_filter_compliant": {
+            "n": 0,
+            "N": 2,
+            "text": "0/2",
+            "rate": 0.0
+          }
+        }
+      }
+    },
+    "C": {
+      "all": {
+        "hit_at_1": {
+          "n": 10,
+          "N": 24,
+          "text": "10/24",
+          "rate": 0.4167
+        },
+        "hit_at_3": {
+          "n": 17,
+          "N": 24,
+          "text": "17/24",
+          "rate": 0.7083
+        },
+        "page_hit_only": {
+          "n": 1,
+          "N": 24,
+          "text": "1/24",
+          "rate": 0.0417
+        },
+        "filter_questions": {
+          "hit_at_3": {
+            "n": 5,
+            "N": 5,
+            "text": "5/5",
+            "rate": 1.0
+          },
+          "top3_filter_compliant": {
+            "n": 5,
+            "N": 5,
+            "text": "5/5",
+            "rate": 1.0
+          }
+        }
+      },
+      "dev": {
+        "hit_at_1": {
+          "n": 8,
+          "N": 18,
+          "text": "8/18",
+          "rate": 0.4444
+        },
+        "hit_at_3": {
+          "n": 12,
+          "N": 18,
+          "text": "12/18",
+          "rate": 0.6667
+        },
+        "page_hit_only": {
+          "n": 1,
+          "N": 18,
+          "text": "1/18",
+          "rate": 0.0556
+        },
+        "filter_questions": {
+          "hit_at_3": {
+            "n": 3,
+            "N": 3,
+            "text": "3/3",
+            "rate": 1.0
+          },
+          "top3_filter_compliant": {
+            "n": 3,
+            "N": 3,
+            "text": "3/3",
+            "rate": 1.0
+          }
+        }
+      },
+      "test": {
+        "hit_at_1": {
+          "n": 2,
+          "N": 6,
+          "text": "2/6",
+          "rate": 0.3333
+        },
+        "hit_at_3": {
+          "n": 5,
+          "N": 6,
+          "text": "5/6",
+          "rate": 0.8333
+        },
+        "page_hit_only": {
+          "n": 0,
+          "N": 6,
+          "text": "0/6",
+          "rate": 0.0
+        },
+        "filter_questions": {
+          "hit_at_3": {
+            "n": 2,
+            "N": 2,
+            "text": "2/2",
+            "rate": 1.0
+          },
+          "top3_filter_compliant": {
+            "n": 2,
+            "N": 2,
+            "text": "2/2",
+            "rate": 1.0
+          }
+        }
+      }
+    }
+  }
+}

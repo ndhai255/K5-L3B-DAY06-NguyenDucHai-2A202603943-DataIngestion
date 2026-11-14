@@ -1,0 +1,4 @@
+timestamp,phase,model,tokens,cost_usd
+2026-11-14T11:11:23,ingest,text-embedding-3-small,47997,0.000960
+2026-11-14T11:11:23,queries,text-embedding-3-small,297,0.000006
+2026-11-14T11:11:34,ingest,text-embedding-3-small,0,0.000000

@@ -1,0 +1,669 @@
+id,strategy,question,filter_applied,expected_answer,top1_ref,top1_text,top2_ref,top2_text,top3_ref,top3_text,score_0_2,reason
+q19,A,How does Python interpret a chained comparison such as 10 < x <= 20?,,"As 10 < x and x <= 20, evaluated left to right.",p109 openstax-intro-python:p109:fixed:1,"are left associative and are evaluated
+from left to right. Exponentiation is the main exception (noted above) and is right associative: that is, evaluated
+from right to left. Ex: 2 ** 3 ** 4 is evaluated as 2 ** (3**4).
+When comparison operators are chained, the expression is converted into the equivalent combination of
+comparisons and evaluated from left to right. Ex. 10 < x <= 20 is evaluated as 10 < x and x <= 20.
+CHECKPOINT
+Operation precedence
+Operation precedence; ch 4, video 10",p121 openstax-intro-python:p121:fixed:3,"x > y
+(Greater than)
+Compares the values of x and y and returns True if the x is greater than y and False
+otherwise. Ex: 9 > 3 is True.
+x < y
+(Less than)
+Compares the values of x and y and returns True if the x is less than y and False
+otherwise. Ex: 9 < 8 is False.
+x >= y
+(Greater than
+or equal)
+Compares the values of x and y and returns True if the x is greater than or equal to y
+and False otherwise. Ex: 2 >= 2 is True.
+Table 4.5 Chapter 4 reference.",p110 openstax-intro-python:p110:fixed:0,"b. 100 < x or x > 150
+c. 100 < x and x > 150
+Enforcing order and clarity with parentheses
+Operator precedence rules can be hard to remember. Parentheses not only assert a different order of
+operations but also reduce confusion.
+CHECKPOINT
+Using parentheses
+Using parenthesis; ch 4, video 11 (https://www.openstax.org/r/using-parentheses)
+CONCEPTS IN PRACTICE
+Using parentheses
+7 . Consider the example above. Why was the evaluation order different from what the programmer
+wanted?
+a. Equality has",,
+q19,B,How does Python interpret a chained comparison such as 10 < x <= 20?,,"As 10 < x and x <= 20, evaluated left to right.",p119 openstax-intro-python:p119:paragraph:1,"A conditional expression is evaluated by first checking the condition. If condition is true,
+expression_if_true is evaluated, and the result is the resulting value of the conditional expression. Else,
+expression_if_false is evaluated, and the result is the resulting value of the conditional expression.
+A variable can be assigned with a conditional expression. Ex: Finding the max of two numbers can be
+calculated with max_num = y if x < y else x
+Note: Conditional expressions have the lowest precedence of all Python operations.
+CHECKPOINT
+Example: Version check
+Example: Version check; ch 4, video 15 (https://www.openstax.org/r/version-check)
+CONCEPTS IN PRACTICE
+Using conditional expressions
+1 . What is the conditional expression version of the following if-else statement?
+if x%2 == 0:
+  response = 'even'",p111 openstax-intro-python:p111:paragraph:0,"Boolean.
+Avoid: x= y<44
+Better: x = y < 44
+• Consider adding whitespace around operators with lower priority.
+Avoid: x = 5 * z+20
+Better: x = 5*z + 20
+4.5 Chained decisions
+Learning objectives
+By the end of this section you should be able to
+• Identify the branches taken in an if-elif and if-elif-else statement.
+• Create a chained decision statement to evaluate multiple conditions.
+elif",p98 openstax-intro-python:p98:paragraph:1,"Example: Rolling a d20 in a tabletop game; ch 4, video 3 (https://www.openstax.org/r/rolling-d20)
+CONCEPTS IN PRACTICE
+Comparing values
+For each new variable, what is the value of compare_result?
+15 . x = 14
+compare_result = (x <= 13)
+a. True",,
+q19,C,How does Python interpret a chained comparison such as 10 < x <= 20?,,"As 10 < x and x <= 20, evaluated left to right.",p119 openstax-intro-python:p119:paragraph:1,"A conditional expression is evaluated by first checking the condition. If condition is true,
+expression_if_true is evaluated, and the result is the resulting value of the conditional expression. Else,
+expression_if_false is evaluated, and the result is the resulting value of the conditional expression.
+A variable can be assigned with a conditional expression. Ex: Finding the max of two numbers can be
+calculated with max_num = y if x < y else x
+Note: Conditional expressions have the lowest precedence of all Python operations.
+CHECKPOINT
+Example: Version check
+Example: Version check; ch 4, video 15 (https://www.openstax.org/r/version-check)
+CONCEPTS IN PRACTICE
+Using conditional expressions
+1 . What is the conditional expression version of the following if-else statement?
+if x%2 == 0:
+  response = 'even'",p111 openstax-intro-python:p111:paragraph:0,"Boolean.
+Avoid: x= y<44
+Better: x = y < 44
+• Consider adding whitespace around operators with lower priority.
+Avoid: x = 5 * z+20
+Better: x = 5*z + 20
+4.5 Chained decisions
+Learning objectives
+By the end of this section you should be able to
+• Identify the branches taken in an if-elif and if-elif-else statement.
+• Create a chained decision statement to evaluate multiple conditions.
+elif",p98 openstax-intro-python:p98:paragraph:1,"Example: Rolling a d20 in a tabletop game; ch 4, video 3 (https://www.openstax.org/r/rolling-d20)
+CONCEPTS IN PRACTICE
+Comparing values
+For each new variable, what is the value of compare_result?
+15 . x = 14
+compare_result = (x <= 13)
+a. True",,
+q20,A,Is the end value included in the sequence produced by range()?,,No. The sequence includes the start and excludes the end.,p130 openstax-intro-python:p130:fixed:1,"values. Examples are provided in the table below.
+Range function Description Example Output
+range(end)
+• Generates a sequence beginning at 0
+until end.
+• Step size: 1
+range(4) 0, 1, 2, 3
+range(start, end)
+• Generates a sequence beginning at
+start until end.
+• Step size: 1
+range(0, 3) 0, 1, 2
+range(2, 6) 2, 3, 4, 5
+range(-13,
+-9)
+-13, -12,
+-11, -10
+range(start, end,
+step)
+• Generates a sequence beginning at
+start until end.
+• Step size: step
+range(0, 4,
+1) 0, 1, 2, 3
+range(1, 7,
+2) 1, 3, 5",p143 openstax-intro-python:p143:fixed:3,"together most topics presented in the chapter.
+Function Description
+range(end) Generates a sequence beginning at 0 until end with step size of 1.
+range(start, end) Generates a sequence beginning at start until end with step size of 1.
+range(start, end, s) Generates a sequence beginning at start until end with the step size of s.
+Table 5.4 Chapter 5 reference.
+TRY IT",p131 openstax-intro-python:p131:fixed:2,"6 . What is the sequence generated from range(-1, -2, -1)?
+a. 1
+b. -1, -2
+c. -2
+7 . What is the output of the range(1, 2, -1)?
+a. 1
+b. 1, 2
+c. empty sequence
+8 . What is the output of range(5, 2)?
+a. 0, 2, 4
+b. 2, 3, 4",,
+q20,B,Is the end value included in the sequence produced by range()?,,No. The sequence includes the start and excludes the end.,p143 openstax-intro-python:p143:paragraph:1,"• A continue statement allows for skipping the execution of the remainder of the loop without exiting the
+loop entirely.
+• A loop else statement runs after the loop's execution is completed without being interrupted by a break
+statement.
+At this point, you should be able to write programs with loop constructs. The programming practice below ties
+together most topics presented in the chapter.
+Function Description
+range(end) Generates a sequence beginning at 0 until end with step size of 1.
+range(start, end) Generates a sequence beginning at start until end with step size of 1.
+range(start, end, s) Generates a sequence beginning at start until end with the step size of s.
+Table 5.4 Chapter 5 reference.
+TRY IT",p130 openstax-intro-python:p130:paragraph:0,"a. A string*
+b. A*s*t*r*i*n*g*
+c. A* *s*t*r*i*n*g*
+Range() function in for loop
+A for loop can be used for iteration and counting. The range() function is a common approach for
+implementing counting in a for loop. A range() function generates a sequence of integers between the two
+numbers given a step size. This integer sequence is inclusive of the start and exclusive of the end of the
+sequence. The range() function can take up to three input values. Examples are provided in the table below.
+Range function Description Example Output
+range(end)
+• Generates a sequence beginning at 0
+until end.
+• Step size: 1
+range(4) 0, 1, 2, 3
+range(start, end)
+• Generates a sequence beginning at
+start until end.
+• Step size: 1
+range(0, 3) 0, 1, 2
+range(2, 6) 2, 3, 4, 5
+range(-13,
+-9)
+-13, -12,
+-11, -10
+range(start, end,
+step)
+• Generates a sequence beginning at
+start until end.
+• Step size: step
+range(0, 4,
+1) 0, 1, 2, 3
+range(1, 7,
+2) 1, 3, 5
+range(3,
+-2, -1)
+3, 2, 1, 0,
+-1
+range(10,
+0, -4) 10, 6, 2",p131 openstax-intro-python:p131:paragraph:1,"7 . What is the output of the range(1, 2, -1)?
+a. 1
+b. 1, 2
+c. empty sequence
+8 . What is the output of range(5, 2)?
+a. 0, 2, 4
+b. 2, 3, 4",,
+q20,C,Is the end value included in the sequence produced by range()?,,No. The sequence includes the start and excludes the end.,p143 openstax-intro-python:p143:paragraph:1,"• A continue statement allows for skipping the execution of the remainder of the loop without exiting the
+loop entirely.
+• A loop else statement runs after the loop's execution is completed without being interrupted by a break
+statement.
+At this point, you should be able to write programs with loop constructs. The programming practice below ties
+together most topics presented in the chapter.
+Function Description
+range(end) Generates a sequence beginning at 0 until end with step size of 1.
+range(start, end) Generates a sequence beginning at start until end with step size of 1.
+range(start, end, s) Generates a sequence beginning at start until end with the step size of s.
+Table 5.4 Chapter 5 reference.
+TRY IT",p130 openstax-intro-python:p130:paragraph:0,"a. A string*
+b. A*s*t*r*i*n*g*
+c. A* *s*t*r*i*n*g*
+Range() function in for loop
+A for loop can be used for iteration and counting. The range() function is a common approach for
+implementing counting in a for loop. A range() function generates a sequence of integers between the two
+numbers given a step size. This integer sequence is inclusive of the start and exclusive of the end of the
+sequence. The range() function can take up to three input values. Examples are provided in the table below.
+Range function Description Example Output
+range(end)
+• Generates a sequence beginning at 0
+until end.
+• Step size: 1
+range(4) 0, 1, 2, 3
+range(start, end)
+• Generates a sequence beginning at
+start until end.
+• Step size: 1
+range(0, 3) 0, 1, 2
+range(2, 6) 2, 3, 4, 5
+range(-13,
+-9)
+-13, -12,
+-11, -10
+range(start, end,
+step)
+• Generates a sequence beginning at
+start until end.
+• Step size: step
+range(0, 4,
+1) 0, 1, 2, 3
+range(1, 7,
+2) 1, 3, 5
+range(3,
+-2, -1)
+3, 2, 1, 0,
+-1
+range(10,
+0, -4) 10, 6, 2",p131 openstax-intro-python:p131:paragraph:1,"7 . What is the output of the range(1, 2, -1)?
+a. 1
+b. 1, 2
+c. empty sequence
+8 . What is the output of range(5, 2)?
+a. 0, 2, 4
+b. 2, 3, 4",,
+q21,A,When does the else block run?,,After the loop finishes without being interrupted by a break statement.,p140 openstax-intro-python:p140:fixed:2,"else statement runs after the loop's execution is completed without being interrupted by a break
+TRY IT
+TRY IT",p102 openstax-intro-python:p102:fixed:1,"mile away, we'll walk. Else, we'll
+drive.
+An else statement is used with an if statement and contains a body of statements that is executed when the
+if statement's condition is false. When an if-else statement is executed, one and only one of the branches
+is taken. That is, the body of the if or the body of the else is executed. Note: The else statement is at the
+same level of indentation as the if statement, and the body is indented.
+if-else statement template:
+1 # Statements before
+2
+3 if",p102 openstax-intro-python:p102:fixed:2,"statement template:
+1 # Statements before
+2
+3 if condition:
+4 # Body
+5 else:
+6 # Body
+7
+8 # Statements after
+CHECKPOINT
+Example: Trivia question
+Example: Trivia question; ch 4, video 5 (https://www.openstax.org/r/trivia-question)
+CONCEPTS IN PRACTICE
+Exploring if-else statements
+6 . Given the following code, the else branch is taken for which range of x?",,
+q21,B,When does the else block run?,,After the loop finishes without being interrupted by a break statement.,p123 openstax-intro-python:p123:paragraph:0,"Function Description
+elif statement
+# Statements before
+if condition:
+  # Body
+elif condition:
+  # Body
+else:
+  # Body
+# Statements after
+Nested if
+statement
+# Statements before
+if condition:
+  if condition:
+    # Body
+  else:
+    # Body
+else:
+  if condition:
+    # Body
+  else:
+    # Body
+# Statements after
+Conditional
+expression
+expression_if_true if condition else expression_if_false
+Table 4.5 Chapter 4 reference.",p102 openstax-intro-python:p102:paragraph:1,"CHECKPOINT
+Example: Trivia question
+Example: Trivia question; ch 4, video 5 (https://www.openstax.org/r/trivia-question)
+CONCEPTS IN PRACTICE
+Exploring if-else statements
+6 . Given the following code, the else branch is taken for which range of x?",p111 openstax-intro-python:p111:paragraph:2,"if-elif statement template:
+# Statements before
+if condition:
+  # Body
+elif condition:
+  # Body
+# Statements after",,
+q21,C,When does the else block run?,"{""chapter"": 5}",After the loop finishes without being interrupted by a break statement.,p140 openstax-intro-python:p140:paragraph:0,"continue
+  print(c)
+a. h
+i
+A
+l
+i
+b. h
+i
+A
+l
+i
+c. hi
+Ali
+Using break control statement in a loop
+Write a program that reads a string value and prints ""Found"" if the string contains a space character. Else,
+prints ""Not found"".
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+5-4-break-and-continue)
+Using a continue statement in a loop
+Complete the following code so that the program calculates the sum of all the numbers in list my_list that
+are greater than or equal to 5.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+5-4-break-and-continue)
+5.5 Loop else
+Learning objectives
+By the end of this section you should be able to
+• Use loop else statement to identify when the loop execution is interrupted using a break statement.
+• Implement a loop else statement with a for or a while loop.
+Loop else
+A loop else statement runs after the loop's execution is completed without being interrupted by a break
+TRY IT",p141 openstax-intro-python:p141:paragraph:0,"statement. A loop else is used to identify if the loop is terminated normally or the execution is interrupted by
+a break statement.
+Ex: A for loop that iterates over a list of numbers to find if the value 10 is in the list. In each iteration, if 10 is
+observed, the statement ""Found 10!"" is printed and the execution can terminate using a break statement. If
+10 is not in the list, the loop terminates when all integers in the list are evaluated, and hence the else
+statement will run and print ""10 is not in the list."" Alternatively, a Boolean variable can be used to
+track whether number 10 is found after loop's execution terminates.
+EXAMPLE 5.4
+Finding the number 10 in a list",p143 openstax-intro-python:p143:paragraph:1,"• A continue statement allows for skipping the execution of the remainder of the loop without exiting the
+loop entirely.
+• A loop else statement runs after the loop's execution is completed without being interrupted by a break
+statement.
+At this point, you should be able to write programs with loop constructs. The programming practice below ties
+together most topics presented in the chapter.
+Function Description
+range(end) Generates a sequence beginning at 0 until end with step size of 1.
+range(start, end) Generates a sequence beginning at start until end with step size of 1.
+range(start, end, s) Generates a sequence beginning at start until end with the step size of s.
+Table 5.4 Chapter 5 reference.
+TRY IT",,
+q22,A,What can a Boolean variable be used to track?,,"Whether a value (e.g. 10) was found in the list after the loop terminates, as an alternative to loop else.",p96 openstax-intro-python:p96:fixed:1,"sign
+Example: Crosswalk sign; ch 4, video 1 (https://www.openstax.org/r/crosswalk-sign)
+CONCEPTS IN PRACTICE
+Using Boolean variables
+Consider the following code:
+is_fruit = ""True""
+is_vegetable = 0
+is_dessert = False
+1 . What is the data type of is_fruit?
+a. Boolean
+b. integer
+c. string
+2 . What is the data type of is_vegetable?
+a. Boolean
+b. integer
+c. string
+3 . What is the data type of is_dessert?
+a. Boolean
+b. integer
+c. string
+4 . How many values can a Boolean variable represent?
+a. 2
+b. 4",p106 openstax-intro-python:p106:fixed:2,"and can be used to toggle a Boolean's value.
+Ex: is_on = not is_on.",p95 openstax-intro-python:p95:fixed:2,"section you should be able to
+• Explain a Boolean value.
+• Use bool variables to store Boolean values.
+• Demonstrate converting integers, floats, and strings to Booleans.
+• Demonstrate converting Booleans to integers, floats, and strings.
+• Use comparison operators to compare integers, floats, and strings.",,
+q22,B,What can a Boolean variable be used to track?,,"Whether a value (e.g. 10) was found in the list after the loop terminates, as an alternative to loop else.",p96 openstax-intro-python:p96:paragraph:0,"bool data type
+People often ask binary questions such as yes/no or true/false questions. Ex: Do you like pineapple on pizza?
+Ex: True or false: I like pineapple on pizza. The response is a Boolean value, meaning the value is either true or
+false. The bool data type, standing for Boolean, represents a binary value of either true or false. true and
+false are keywords, and capitalization is required.
+CHECKPOINT
+Example: Crosswalk sign
+Example: Crosswalk sign; ch 4, video 1 (https://www.openstax.org/r/crosswalk-sign)
+CONCEPTS IN PRACTICE
+Using Boolean variables
+Consider the following code:
+is_fruit = ""True""
+is_vegetable = 0
+is_dessert = False
+1 . What is the data type of is_fruit?
+a. Boolean
+b. integer
+c. string
+2 . What is the data type of is_vegetable?
+a. Boolean
+b. integer
+c. string
+3 . What is the data type of is_dessert?
+a. Boolean
+b. integer
+c. string
+4 . How many values can a Boolean variable represent?
+a. 2
+b. 4
+c. 8
+5 . Which is a valid value for a Boolean variable?
+a. true",p101 openstax-intro-python:p101:paragraph:0,"CHECKPOINT
+Example: Quantity check
+Example: Quantity check; ch 4, video 4 (https://www.openstax.org/r/quantity-check)
+USING BOOLEAN VARIABLES
+A Boolean variable already has a value of True or False and can be used directly in a condition rather than
+using the equality operator. Ex: if is_raining == True: can be simplified to if is_raining:.
+CONCEPTS IN PRACTICE
+Using if statements
+1 . Given the following, which part is the condition?
+if age < 12:
+  print(""Discount for children available"")
+a. age
+b. age < 12
+c. print(""Discount for children available"")
+2 . Given the following, which lines execute if the condition is true?
+1 print(""Have a great day."")
+2 if is_raining:
+3 print(""Don't forget an umbrella!"")
+4 print(""See you soon."")
+a. 1, 2, 3
+b. 1, 2, 4
+c. 1, 2, 3, 4
+3 . Given the following (same as above), which lines execute if the condition is False?
+1 print(""Have a great day."")
+2 if is_raining:
+3 print(""Don't forget an umbrella!"")
+4 print(""See you soon."")
+a. 1, 2, 3
+b. 1, 2, 4",p95 openstax-intro-python:p95:paragraph:0,"Figure 4.1 credit: modification of work ""Fork In The Road"", by Ian Sane/Flickr, CC BY 2.0
+Chapter Outline
+4.1 Boolean values
+4.2 If-else statements
+4.3 Boolean operations
+4.4 Operator precedence
+4.5 Chained decisions
+4.6 Nested decisions
+4.7 Conditional expressions
+4.8 Chapter summary
+Introduction
+The Python interpreter follows a single path of execution when executing a program. What if a programmer
+wants to define multiple possible paths? Ex: Instead of always taking the left path, a program uses the path
+width to decide which path to take. If the left path is wider, take the right path. Else, take the left path.
+A branch is a group of statements that execute based on a condition. The Expressions chapter introduced
+expressions. This chapter explores how expressions can be used as conditions to make decisions in programs.
+4.1 Boolean values
+Learning objectives
+By the end of this section you should be able to
+• Explain a Boolean value.
+• Use bool variables to store Boolean values.",,
+q22,C,What can a Boolean variable be used to track?,"{""chapter"": 5}","Whether a value (e.g. 10) was found in the list after the loop terminates, as an alternative to loop else.",p141 openstax-intro-python:p141:paragraph:0,"statement. A loop else is used to identify if the loop is terminated normally or the execution is interrupted by
+a break statement.
+Ex: A for loop that iterates over a list of numbers to find if the value 10 is in the list. In each iteration, if 10 is
+observed, the statement ""Found 10!"" is printed and the execution can terminate using a break statement. If
+10 is not in the list, the loop terminates when all integers in the list are evaluated, and hence the else
+statement will run and print ""10 is not in the list."" Alternatively, a Boolean variable can be used to
+track whether number 10 is found after loop's execution terminates.
+EXAMPLE 5.4
+Finding the number 10 in a list",p126 openstax-intro-python:p126:paragraph:1,"b. 6
+c. 7
+2 . What is the variable g's value when the while loop condition evaluates to False?
+a. 13
+b. 20
+c. 21
+3 . What are the printed values in the output?
+a. 1 1 2 3 5 8 13
+b. 1 2 3 5 8 13
+c. 1 1 2 3 5 8 13 21
+Counting with a while loop
+A while loop can be used to count up or down. A counter variable can be used in the loop expression to",p126 openstax-intro-python:p126:paragraph:0,"loop expression is evaluated again.
+• If true, the loop body will execute at least one more time (also called looping or iterating one more time).
+• If false, the loop's execution will terminate and the next statement after the loop body will execute.
+CHECKPOINT
+While loop
+While loop; ch 5, video 1 (https://www.openstax.org/r/while-loop)
+CONCEPTS IN PRACTICE
+While loop example
+Fibonacci is a series of numbers in which each number is the sum of the two preceding numbers. The
+Fibonacci sequence starts with two ones: 1, 1, 2, 3, . . . . Consider the following code that prints all Fibonacci
+numbers less than 20, and answer the following questions.
+# Initializing the first two Fibonacci numbers
+f = 1
+g = 1
+print (f, end = ' ')
+# Running the loop while the last Fibonacci number is less than 20
+while g < 20:
+  print(g, end = ' ')
+  # Calculating the next Fibonacci number and updating the last two sequence numbers
+  temp = f
+  f = g
+  g = temp + g
+1 . How many times does the loop execute?
+a. 5",,
+q23,A,What does a function return if it has no return statement?,,"None, representing no value.",p165 openstax-intro-python:p165:fixed:2,"c. no difference
+Using multiple return statements
+Functions that have multiple execution paths may use multiple return statements. Ex: A function with an
+if-else statement may have two return statements for each branch. Return statements always end the",p164 openstax-intro-python:p164:fixed:2,"to
+• Identify a function's return value.
+• Employ return statements in functions to return values.
+Returning from a function
+When a function finishes, the function returns and provides a result to the calling code. A return statement
+TRY IT",p165 openstax-intro-python:p165:fixed:0,"finishes the function execution and can specify a value to return to the function's caller. Functions introduced
+so far have not had a return statement, which is the same as returning None, representing no value.
+CHECKPOINT
+Returning a value from a function
+Returning a value from a function; ch 6, video 11 (https://www.openstax.org/r/returning-value-from-function)
+CONCEPTS IN PRACTICE
+Using return statements
+1 . What is returned by calc_mpg(miles, gallons)?
+def calc_mpg(miles, gallons):
+  mpg =",,
+q23,B,What does a function return if it has no return statement?,,"None, representing no value.",p165 openstax-intro-python:p165:paragraph:1,"Functions that have multiple execution paths may use multiple return statements. Ex: A function with an
+if-else statement may have two return statements for each branch. Return statements always end the",p164 openstax-intro-python:p164:paragraph:1,"Returning from a function
+When a function finishes, the function returns and provides a result to the calling code. A return statement
+TRY IT",p165 openstax-intro-python:p165:paragraph:0,"finishes the function execution and can specify a value to return to the function's caller. Functions introduced
+so far have not had a return statement, which is the same as returning None, representing no value.
+CHECKPOINT
+Returning a value from a function
+Returning a value from a function; ch 6, video 11 (https://www.openstax.org/r/returning-value-from-function)
+CONCEPTS IN PRACTICE
+Using return statements
+1 . What is returned by calc_mpg(miles, gallons)?
+def calc_mpg(miles, gallons):
+  mpg = miles/gallons
+  return mpg
+a. mpg
+b. None
+c. Error
+2 . What is returned by calc_sqft()?
+def calc_sqft(length, width):
+  sqft = length * width
+  return
+a. sqft
+b. None
+c. Error
+3 . What is the difference between hw_1() and hw_2()?
+def hw_1():
+  print(""Hello world!"")
+  return
+def hw_2():
+  print(""Hello world!"")
+a. hw_1() returns a string, hw_2() does not
+b. hw_1() returns None, hw_2() does not
+c. no difference
+Using multiple return statements",,
+q23,C,What does a function return if it has no return statement?,,"None, representing no value.",p165 openstax-intro-python:p165:paragraph:1,"Functions that have multiple execution paths may use multiple return statements. Ex: A function with an
+if-else statement may have two return statements for each branch. Return statements always end the",p164 openstax-intro-python:p164:paragraph:1,"Returning from a function
+When a function finishes, the function returns and provides a result to the calling code. A return statement
+TRY IT",p165 openstax-intro-python:p165:paragraph:0,"finishes the function execution and can specify a value to return to the function's caller. Functions introduced
+so far have not had a return statement, which is the same as returning None, representing no value.
+CHECKPOINT
+Returning a value from a function
+Returning a value from a function; ch 6, video 11 (https://www.openstax.org/r/returning-value-from-function)
+CONCEPTS IN PRACTICE
+Using return statements
+1 . What is returned by calc_mpg(miles, gallons)?
+def calc_mpg(miles, gallons):
+  mpg = miles/gallons
+  return mpg
+a. mpg
+b. None
+c. Error
+2 . What is returned by calc_sqft()?
+def calc_sqft(length, width):
+  sqft = length * width
+  return
+a. sqft
+b. None
+c. Error
+3 . What is the difference between hw_1() and hw_2()?
+def hw_1():
+  print(""Hello world!"")
+  return
+def hw_2():
+  print(""Hello world!"")
+a. hw_1() returns a string, hw_2() does not
+b. hw_1() returns None, hw_2() does not
+c. no difference
+Using multiple return statements",,
+q24,A,Why shouldn't a list be used as a default parameter value?,,"Default values are defined only once, so mutable objects such as lists should not be defaults.",p160 openstax-intro-python:p160:fixed:1,"if a programmer wants to write a function that prints the contents of a list? Good practice is to pass
+values directly to a function rather than relying on global variables. A function argument is a value passed as
+input during a function call. A function parameter is a variable representing the input in the function
+definition. Note: The terms ""argument"" and ""parameter"" are sometimes used interchangeably in conversation
+and documentation.
+CHECKPOINT
+Global and local variables in a program with",p170 openstax-intro-python:p170:fixed:1,"(such as
+lists) should not be used as default values.
+The physics example below calculates weight as a force in newtons given mass in kilograms and acceleration
+in . Gravity on Earth is 9.8 , and gravity on Mars is 3.7 .
+CHECKPOINT
+Using default parameter values
+Using default parameter values; ch 6, video 14 (https://www.openstax.org/r/default-parameter-values)
+CONCEPTS IN PRACTICE
+Using default parameter values
+Consider the following updated version of greeting():
+def greeting(msg,",p171 openstax-intro-python:p171:fixed:3,"with the arguments' values.
+• Function calls can use positional arguments to map values to parameters in order.
+• Function calls can use keyword arguments to map values using parameter names in any order.
+• Functions can define default parameter values to allow for optional arguments in function calls.
+• Python uses a pass-by-object-reference system to assign parameters with the object values referenced by
+the arguments.
+• Functions can use return statements to return values back to the calling",,
+q24,B,Why shouldn't a list be used as a default parameter value?,,"Default values are defined only once, so mutable objects such as lists should not be defaults.",p170 openstax-intro-python:p170:paragraph:0,"a. greeting(""Morning"", ""Morgan"", count=3)
+b. greeting(count=1,""Hi"", ""Bea"")
+c. greeting(""Cheers"", ""Colleagues"", 10)
+Default parameter values
+Functions can define default parameter values to use if a positional or keyword argument is not provided for
+the parameter. Ex: def season(m, d, hemi=""N""): defines a default value of ""N"" for the hemi parameter.
+Note: Default parameter values are only defined once to be used by the function, so mutable objects (such as
+lists) should not be used as default values.
+The physics example below calculates weight as a force in newtons given mass in kilograms and acceleration
+in . Gravity on Earth is 9.8 , and gravity on Mars is 3.7 .
+CHECKPOINT
+Using default parameter values
+Using default parameter values; ch 6, video 14 (https://www.openstax.org/r/default-parameter-values)
+CONCEPTS IN PRACTICE
+Using default parameter values
+Consider the following updated version of greeting():
+def greeting(msg, name=""Friend"", count=1):
+  i = 0
+  for i in range(0, count):",p171 openstax-intro-python:p171:paragraph:2,"At this point, you should be able to write functions that have any number of parameters and return a value,
+TRY IT",p147 openstax-intro-python:p147:paragraph:1,"• Define a parameterless function that outputs strings.
+• Describe benefits of using functions.",,
+q24,C,Why shouldn't a list be used as a default parameter value?,,"Default values are defined only once, so mutable objects such as lists should not be defaults.",p170 openstax-intro-python:p170:paragraph:0,"a. greeting(""Morning"", ""Morgan"", count=3)
+b. greeting(count=1,""Hi"", ""Bea"")
+c. greeting(""Cheers"", ""Colleagues"", 10)
+Default parameter values
+Functions can define default parameter values to use if a positional or keyword argument is not provided for
+the parameter. Ex: def season(m, d, hemi=""N""): defines a default value of ""N"" for the hemi parameter.
+Note: Default parameter values are only defined once to be used by the function, so mutable objects (such as
+lists) should not be used as default values.
+The physics example below calculates weight as a force in newtons given mass in kilograms and acceleration
+in . Gravity on Earth is 9.8 , and gravity on Mars is 3.7 .
+CHECKPOINT
+Using default parameter values
+Using default parameter values; ch 6, video 14 (https://www.openstax.org/r/default-parameter-values)
+CONCEPTS IN PRACTICE
+Using default parameter values
+Consider the following updated version of greeting():
+def greeting(msg, name=""Friend"", count=1):
+  i = 0
+  for i in range(0, count):",p171 openstax-intro-python:p171:paragraph:2,"At this point, you should be able to write functions that have any number of parameters and return a value,
+TRY IT",p147 openstax-intro-python:p147:paragraph:1,"• Define a parameterless function that outputs strings.
+• Describe benefits of using functions.",,

@@ -1,0 +1,118 @@
+{
+  "generated_at": "2026-11-14T11:11:24",
+  "model": "text-embedding-3-small",
+  "dimensions": 1536,
+  "price_usd_per_1m_tokens": 0.02,
+  "vector_search": "exact cosine (embedding <=> query), no ANN index",
+  "corpus": {
+    "counted_pages": 76,
+    "chars": 84592
+  },
+  "strategies": {
+    "A": {
+      "chunker": "fixed_size",
+      "params": {
+        "size": 500,
+        "overlap": 50
+      },
+      "use_filter": false,
+      "chunks": 220,
+      "chunk_chars": {
+        "min": 30,
+        "p25": 380.5,
+        "median": 494.0,
+        "mean": 414.6,
+        "p75": 497.0,
+        "max": 499
+      },
+      "ingest": {
+        "chunks": 220,
+        "written": 220,
+        "embedded_texts": 220,
+        "reused_vectors": 0,
+        "deleted_obsolete": 0,
+        "tokens": 24975,
+        "seconds": 2.627
+      }
+    },
+    "B": {
+      "chunker": "by_paragraph",
+      "params": {
+        "max_size": 1000
+      },
+      "use_filter": false,
+      "chunks": 131,
+      "chunk_chars": {
+        "min": 6,
+        "p25": 329.0,
+        "median": 788,
+        "mean": 645.2,
+        "p75": 967.0,
+        "max": 1000
+      },
+      "ingest": {
+        "chunks": 131,
+        "written": 131,
+        "embedded_texts": 129,
+        "reused_vectors": 2,
+        "deleted_obsolete": 0,
+        "tokens": 23022,
+        "seconds": 1.245
+      }
+    },
+    "C": {
+      "chunker": "by_paragraph",
+      "params": {
+        "max_size": 1000
+      },
+      "use_filter": true,
+      "chunks": 131,
+      "chunk_chars": {
+        "min": 6,
+        "p25": 329.0,
+        "median": 788,
+        "mean": 645.2,
+        "p75": 967.0,
+        "max": 1000
+      },
+      "ingest": {
+        "chunks": 131,
+        "written": 131,
+        "embedded_texts": 0,
+        "reused_vectors": 131,
+        "deleted_obsolete": 0,
+        "tokens": 0,
+        "seconds": 0.117
+      }
+    }
+  },
+  "db_rows": {
+    "A": 220,
+    "B": 131,
+    "C": 131
+  },
+  "this_run": {
+    "document_tokens": 47997,
+    "query_tokens": 297,
+    "cost_usd": 0.000966,
+    "api_calls": 6,
+    "note": "unchanged chunks are not re-embedded; the first ingest's cost is kept in results/embedding_usage.csv"
+  },
+  "query_latency_ms": {
+    "A": {
+      "mean": 14.96,
+      "median": 14.8,
+      "max": 20.44
+    },
+    "B": {
+      "mean": 13.35,
+      "median": 13.41,
+      "max": 18.34
+    },
+    "C": {
+      "mean": 14.52,
+      "median": 14.63,
+      "max": 18.51
+    }
+  }
+}
